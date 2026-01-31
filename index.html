@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Louis Tay | Well-Being · Measurement · AI | Purdue University</title>
+    <meta name="title" content="Louis Tay | Well-Being · Measurement · AI | Purdue University">
+    <meta name="description" content="Louis Tay is the William C. Byham Chair in Industrial-Organizational Psychology at Purdue University. Expert in well-being science, psychometrics, AI & mental health, character strengths, machine learning, and experience sampling methods. Director of WAM Lab, Co-Founder of ExpiWell, and PI of Florea.AI.">
+    <meta name="keywords" content="Louis Tay, well-being, wellbeing, psychometrics, measurement, AI, artificial intelligence, mental health, character strengths, machine learning, experience sampling, ecological momentary assessment, EMA, ESM, industrial-organizational psychology, I-O psychology, Purdue University, WAM Lab, ExpiWell, Florea.AI, positive psychology, scale development, big data psychology">
+    <meta name="author" content="Louis Tay">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://louistay.ai/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://louistay.ai/">
+    <meta property="og:title" content="Louis Tay | Well-Being · Measurement · AI">
+    <meta property="og:description" content="Psychologist and measurement scientist at Purdue University. Expert in well-being science, psychometrics, AI & mental health. Director of WAM Lab, Co-Founder of ExpiWell, PI of Florea.AI.">
+    <meta property="og:image" content="https://louistay.ai/og-image.jpg">
+    <meta property="og:site_name" content="Louis Tay">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://louistay.ai/">
+    <meta name="twitter:title" content="Louis Tay | Well-Being · Measurement · AI">
+    <meta name="twitter:description" content="Psychologist and measurement scientist at Purdue University. Expert in well-being science, psychometrics, AI & mental health. Director of WAM Lab, Co-Founder of ExpiWell, PI of Florea.AI.">
+    <meta name="twitter:image" content="https://louistay.ai/og-image.jpg">
+    <meta name="twitter:creator" content="@LouisTaySC">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Louis Tay",
+        "givenName": "Louis",
+        "familyName": "Tay",
+        "jobTitle": "William C. Byham Chair in Industrial-Organizational Psychology",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Purdue University",
+            "url": "https://www.purdue.edu/"
+        },
+        "affiliation": [
+            {
+                "@type": "Organization",
+                "name": "WAM Lab (Well-Being and Measurement Lab)",
+                "url": "https://www.wam-lab.com"
+            },
+            {
+                "@type": "Organization",
+                "name": "ExpiWell",
+                "url": "https://www.expiwell.com"
+            },
+            {
+                "@type": "Organization",
+                "name": "Florea.AI",
+                "url": "https://florea.ai/"
+            }
+        ],
+        "url": "https://louistay.ai/",
+        "sameAs": [
+            "https://www.linkedin.com/in/louistay/",
+            "https://twitter.com/LouisTaySC",
+            "https://bsky.app/profile/louistay.bsky.social",
+            "https://scholar.google.com/citations?hl=en&user=5_1xpscAAAAJ",
+            "https://www.wam-lab.com",
+            "https://www.expiwell.com",
+            "https://florea.ai/"
+        ],
+        "knowsAbout": [
+            "Well-being science",
+            "Psychometrics",
+            "Artificial Intelligence",
+            "Mental Health",
+            "Character Strengths",
+            "Machine Learning",
+            "Experience Sampling Methods",
+            "Ecological Momentary Assessment",
+            "Industrial-Organizational Psychology",
+            "Scale Development",
+            "Big Data in Psychology"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Illinois at Urbana-Champaign"
+        },
+        "email": "stay@purdue.edu",
+        "description": "Louis Tay is a psychologist and measurement scientist advancing well-being research through rigorous methods and AI innovation. He directs the WAM Lab, co-founded ExpiWell, coordinates Purdue's Industrial-Organizational Psychology program, and leads Florea.AI."
+    }
+    </script>
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf9f7;
+            --accent: #2563eb;
+            --accent-dark: #1e40af;
+            --warm: #92400e;
+            --muted: #64748b;
+            --divider: #e2e8f0;
+            --card-bg: #ffffff;
+            --purdue-gold: #CFB991;
+            --purdue-black: #101820;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 2.5rem;
+            animation: fadeUp 0.8s ease-out;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--accent-dark);
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+
+        .affiliation {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-top: 0.3rem;
+        }
+
+        /* Expertise pills */
+        .expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0 2rem;
+            animation: fadeUp 0.8s ease-out 0.05s backwards;
+            justify-content: center;
+        }
+
+        .pill {
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            color: white;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* Bio */
+        .bio {
+            margin-bottom: 3rem;
+            animation: fadeUp 0.8s ease-out 0.1s backwards;
+        }
+
+        .bio p {
+            font-size: 1.05rem;
+            color: var(--ink);
+        }
+
+        .bio p + p {
+            margin-top: 1rem;
+        }
+
+        .bio a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .bio a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.01em;
+        }
+
+        h2 .subtle {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* Featured cards grid */
+        .featured-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        /* Featured project cards */
+        .featured-card {
+            border-radius: 12px;
+            padding: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            animation: fadeUp 0.8s ease-out backwards;
+        }
+
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        /* WAM Lab - Warm teal/green */
+        .featured-card.wam-lab {
+            background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
+            animation-delay: 0.15s;
+        }
+
+        .featured-card.wam-lab .stat {
+            color: #5eead4;
+        }
+
+        .featured-card.wam-lab .featured-label {
+            color: #5eead4;
+        }
+
+        /* ExpiWell - Deep blue tech */
+        .featured-card.expiwell {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            animation-delay: 0.2s;
+        }
+
+        .featured-card.expiwell .stat {
+            color: #60a5fa;
+        }
+
+        .featured-card.expiwell .featured-label {
+            color: #60a5fa;
+        }
+
+        /* Purdue I-O - Purdue black and gold */
+        .featured-card.purdue-io {
+            background: linear-gradient(135deg, var(--purdue-black) 0%, #1f2937 100%);
+            animation-delay: 0.25s;
+        }
+
+        .featured-card.purdue-io .stat {
+            color: var(--purdue-gold);
+        }
+
+        .featured-card.purdue-io .featured-label {
+            color: var(--purdue-gold);
+        }
+
+        .featured-card.purdue-io .cta {
+            background: var(--purdue-gold);
+            color: var(--purdue-black);
+        }
+
+        /* Florea.AI - Warm violet/purple */
+        .featured-card.florea {
+            background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+            animation-delay: 0.3s;
+        }
+
+        .featured-card.florea .stat {
+            color: #c4b5fd;
+        }
+
+        .featured-card.florea .featured-label {
+            color: #c4b5fd;
+        }
+
+        .featured-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .featured-card h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 2rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-block .stat {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .stat-block .stat-label {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.7);
+            margin-top: 0.1rem;
+        }
+
+        .featured-card p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.85);
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .featured-card .highlight-list {
+            list-style: none;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .featured-card .highlight-list li {
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .featured-card .highlight-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            opacity: 0.6;
+        }
+
+        .featured-card .cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            color: #0f172a;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .featured-card .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Additional links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            animation: fadeUp 0.8s ease-out 0.35s backwards;
+        }
+
+        .link-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.1rem 1.25rem;
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.25s ease;
+        }
+
+        .link-card:hover {
+            border-color: var(--accent);
+            transform: translateX(4px);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .link-card .title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .link-card .desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 0.15rem;
+        }
+
+        .link-card .arrow {
+            font-size: 1.2rem;
+            color: var(--accent);
+            opacity: 0;
+            transform: translateX(-8px);
+            transition: all 0.25s ease;
+        }
+
+        .link-card:hover .arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Book list */
+        .book-list {
+            list-style: none;
+            animation: fadeUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .book-list li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--divider);
+            font-size: 0.95rem;
+        }
+
+        .book-list li:last-child {
+            border-bottom: none;
+        }
+
+        .book-list a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .book-list a:hover {
+            color: var(--accent);
+        }
+
+        .book-list em {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.05rem;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .book-list .meta {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        /* LinkedIn embeds section */
+        .linkedin-section {
+            animation: fadeUp 0.8s ease-out 0.45s backwards;
+        }
+
+        .linkedin-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .embed-placeholder {
+            background: #f8fafc;
+            border: 2px dashed var(--divider);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .embed-placeholder code {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        .linkedin-embed {
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .linkedin-embed iframe {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* Social CTA */
+        .social-cta {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px solid var(--divider);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            animation: fadeUp 0.8s ease-out 0.5s backwards;
+        }
+
+        .social-cta h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-cta p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .social-btn.linkedin {
+            background: #0a66c2;
+            color: white;
+        }
+
+        .social-btn.x {
+            background: #0f1419;
+            color: white;
+        }
+
+        .social-btn.bluesky {
+            background: #0085ff;
+            color: white;
+        }
+
+        .social-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        /* Contact */
+        .contact-section {
+            animation: fadeUp 0.8s ease-out 0.55s backwards;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--divider);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            animation: fadeUp 0.8s ease-out 0.6s backwards;
+        }
+
+        footer a {
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent);
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            html { font-size: 16px; }
+            h1 { font-size: 2.4rem; }
+            .container { padding: 2.5rem 1.5rem; }
+            .profile-photo { width: 140px; height: 140px; }
+            .featured-card { padding: 1.5rem; }
+            .featured-card h3 { font-size: 1.5rem; }
+            .stats-row { gap: 1.5rem; }
+            .stat-block .stat { font-size: 1.5rem; }
+            .social-buttons { flex-direction: column; align-items: center; }
+            .social-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body itemscope itemtype="https://schema.org/Person">
+    <main class="container" role="main">
+        <header>
+            <img src="profile-photo.jpg" alt="Louis Tay - Psychologist and Measurement Scientist at Purdue University" class="profile-photo" itemprop="image" width="180" height="180">
+            <h1 itemprop="name">Louis Tay</h1>
+            <p class="tagline" aria-label="Areas of expertise">Well-Being · Measurement · AI</p>
+            <p class="affiliation" itemprop="jobTitle">William C. Byham Chair in Industrial-Organizational Psychology, <span itemprop="affiliation">Purdue University</span></p>
+        </header>
+
+        <nav class="expertise" aria-label="Expertise areas">
+            <span class="pill">Well-Being Science</span>
+            <span class="pill">Psychometrics</span>
+            <span class="pill">AI & Mental Health</span>
+            <span class="pill">Character</span>
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Experience Sampling</span>
+        </nav>
+
+        <article class="bio" itemprop="description">
+            <p>I study how people thrive—developing rigorous measurement methods to capture well-being in all its complexity, and exploring how AI can enhance human flourishing. My work bridges psychological science, advanced psychometrics, and emerging technology.</p>
+            <p>I direct the <a href="https://www.wam-lab.com">WAM Lab</a>, co-founded <a href="https://www.expiwell.com">ExpiWell</a>, coordinate <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/">Purdue's Industrial-Organizational Psychology program</a>, and lead <a href="https://florea.ai/">Florea.AI</a>—a John Templeton Foundation project developing virtue-centered AI conversational agents.</p>
+        </article>
+
+        <!-- Leadership Roles -->
+        <section aria-label="Leadership roles and projects">
+            <h2>Leadership</h2>
+            <div class="featured-grid">
+
+                <!-- WAM Lab -->
+                <div class="featured-card wam-lab">
+                    <div class="featured-label">Director</div>
+                    <h3>WAM Lab</h3>
+                    <p style="margin-top: 0.5rem;">Well-Being and Measurement Lab at Purdue University</p>
+                    <div class="stats-row">
+                        <div class="stat-block">
+                            <div class="stat">200+</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                    </div>
+                    <p>Cross-disciplinary research combining well-being science, advanced measurement methods, and AI applications. We develop tools and frameworks that advance how researchers study human flourishing.</p>
+                    <ul class="highlight-list">
+                        <li>AI bias detection and measurement frameworks</li>
+                        <li>Workplace well-being and sustainable careers</li>
+                        <li>Character strengths and human flourishing</li>
+                        <li>Psychometric methods and scale development</li>
+                    </ul>
+                    <a href="https://www.wam-lab.com" class="cta">
+                        Visit WAM Lab
+                        <span>→</span>
+                    </a>
+                </div>
+                
+                <!-- ExpiWell -->
+                <div class="featured-card expiwell">
+                    <div class="featured-label">Co-Founder</div>
+                    <h3>ExpiWell</h3>
+                    <div class="stats-row">
+                        <div class="stat-block">
+                            <div class="stat">6,300+</div>
+                            <div class="stat-label">Researchers worldwide</div>
+                        </div>
+                        <div class="stat-block">
+                            <div class="stat">#1</div>
+                            <div class="stat-label">EMA/ESM platform</div>
+                        </div>
+                    </div>
+                    <p>The leading platform for ecological momentary assessment and experience sampling research. ExpiWell empowers researchers to capture real-time data on thoughts, feelings, and behaviors as they unfold in daily life.</p>
+                    <a href="https://www.expiwell.com" class="cta">
+                        Explore ExpiWell
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Purdue I-O Psychology -->
+                <div class="featured-card purdue-io">
+                    <div class="featured-label">Program Coordinator</div>
+                    <h3>Purdue Industrial-Organizational Psychology</h3>
+                    <div class="stats-row">
+                        <div class="stat-block">
+                            <div class="stat">Top 7</div>
+                            <div class="stat-label">US News ranking</div>
+                        </div>
+                        <div class="stat-block">
+                            <div class="stat">PhD</div>
+                            <div class="stat-label">Doctoral program</div>
+                        </div>
+                    </div>
+                    <p>One of the world's premier Industrial-Organizational Psychology doctoral programs. We train the next generation of scientists and practitioners to tackle critical challenges in work, organizations, and human performance.</p>
+                    <ul class="highlight-list">
+                        <li>Broad faculty expertise: measurement, personality, selection, teams, leadership, well-being, motivation, human-AI collaboration</li>
+                        <li>Strong placement record in academia and industry</li>
+                        <li>Collaborative, supportive training environment</li>
+                        <li>Cutting-edge research on AI, big data, and the future of work</li>
+                    </ul>
+                    <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/" class="cta">
+                        Explore the Program
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Florea.AI -->
+                <div class="featured-card florea">
+                    <div class="featured-label">Principal Investigator</div>
+                    <h3>Florea.AI</h3>
+                    <div class="stats-row">
+                        <div class="stat-block">
+                            <div class="stat">JTF</div>
+                            <div class="stat-label">John Templeton Foundation funded</div>
+                        </div>
+                    </div>
+                    <p>Developing virtue-centered AI conversational agents that support human flourishing. This research explores how AI can be designed to cultivate character strengths and promote well-being through meaningful dialogue.</p>
+                    <ul class="highlight-list">
+                        <li>AI agents grounded in virtue ethics and character science</li>
+                        <li>Therapeutic conversation assessment frameworks</li>
+                        <li>Reporting guidelines for AI conversational agents</li>
+                        <li>Cross-disciplinary collaboration across psychology, philosophy, and computer science</li>
+                    </ul>
+                    <a href="https://florea.ai/" class="cta">
+                        Learn More
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Additional Work -->
+        <section aria-label="Additional projects and resources">
+            <h2>More</h2>
+            <div class="links">
+                <a href="https://www.characterinventory.org" class="link-card">
+                    <div>
+                        <div class="title">Character Inventory</div>
+                        <div class="desc">Assessments for measuring character strengths</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://www.graphicaldescriptives.org" class="link-card">
+                    <div>
+                        <div class="title">Graphical Descriptives</div>
+                        <div class="desc">Tools for visualizing and understanding data</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://scholar.google.com/citations?hl=en&user=5_1xpscAAAAJ&view_op=list_works&sortby=pubdate" class="link-card">
+                    <div>
+                        <div class="title">Google Scholar</div>
+                        <div class="desc">Publications in measurement, well-being, and AI</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Selected Books -->
+        <section aria-label="Selected books edited by Louis Tay">
+            <h2>Selected Books <span class="subtle">· Editor</span></h2>
+            <ul class="book-list">
+                <li>
+                    <a href="https://www.apa.org/pubs/books/big-data-psychological-research">
+                        <em>Big Data in Psychological Research</em>
+                        <span class="meta">· APA Books</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://expiltay.github.io/handbookofwellbeing/">
+                        <em>Handbook of Well-Being</em>
+                        <span class="meta">· DEF Publishers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hogrefe.com/us/shop/handbook-of-positive-psychology-assessment-96232.html">
+                        <em>Handbook of Positive Psychology Assessment</em>
+                        <span class="meta">· Hogrefe</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://academic.oup.com/edited-volume/41978">
+                        <em>Oxford Handbook of the Positive Humanities</em>
+                        <span class="meta">· Oxford University Press</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cambridge.org/core/books/technology-and-measurement-around-the-globe/0238BF0428D911075742CA93B7366E75">
+                        <em>Technology and Measurement around the Globe</em>
+                        <span class="meta">· Cambridge University Press</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Recent Writing / LinkedIn -->
+        <section class="linkedin-section" aria-label="Recent writing and social media">
+            <h2>Recent Writing</h2>
+            <div class="linkedin-posts">
+                <!-- LinkedIn Embed 1 -->
+                <div class="linkedin-embed">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7422272375712403456?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" title="Louis Tay LinkedIn post about well-being and AI research"></iframe>
+                </div>
+
+                <!-- LinkedIn Embed 2 -->
+                <div class="linkedin-embed">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7420103687936688128?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" title="Louis Tay LinkedIn post about measurement and psychology"></iframe>
+                </div>
+            </div>
+
+            <!-- Social CTA -->
+            <div class="social-cta">
+                <h3>Follow My Research</h3>
+                <p>I share insights on well-being science, measurement methods, and AI applications</p>
+                <div class="social-buttons" role="navigation" aria-label="Social media links">
+                    <a href="https://www.linkedin.com/in/louistay/" class="social-btn linkedin" aria-label="Follow Louis Tay on LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://twitter.com/LouisTaySC" class="social-btn x" aria-label="Follow Louis Tay on X Twitter">
+                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        X / Twitter
+                    </a>
+                    <a href="https://bsky.app/profile/louistay.bsky.social" class="social-btn bluesky" aria-label="Follow Louis Tay on Bluesky">
+                        <svg viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
+                        Bluesky
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section" aria-label="Contact information">
+            <h2>Contact</h2>
+            <p class="contact-info">
+                <a href="mailto:stay@purdue.edu" itemprop="email">stay@purdue.edu</a><br>
+                Department of Psychological Sciences, Purdue University
+            </p>
+        </section>
+
+        <footer>
+            <p>William C. Byham Chair in Industrial-Organizational Psychology</p>
+            <p style="margin-top: 0.5rem;"><a href="https://www.purdue.edu/hhs/psy/">Purdue Psychology</a></p>
+        </footer>
+    </main>
+</body>
+</html>
