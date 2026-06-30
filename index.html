@@ -12,13 +12,20 @@
     <meta name="author" content="Louis Tay">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://louistay.ai/">
-    
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://louistay.ai/">
     <meta property="og:title" content="Louis Tay | Well-Being · Measurement · AI">
     <meta property="og:description" content="Psychologist and measurement scientist at Purdue University. Expert in well-being science, psychometrics, AI & mental health. Director of WAM Lab, Co-Founder of ExpiWell, PI of Florea.AI.">
     <meta property="og:image" content="https://louistay.ai/og-image.jpg">
+    <meta property="og:image:alt" content="Louis Tay — Well-Being, Measurement, and AI">
     <meta property="og:site_name" content="Louis Tay">
     <meta property="og:locale" content="en_US">
 
@@ -28,6 +35,7 @@
     <meta name="twitter:title" content="Louis Tay | Well-Being · Measurement · AI">
     <meta name="twitter:description" content="Psychologist and measurement scientist at Purdue University. Expert in well-being science, psychometrics, AI & mental health. Director of WAM Lab, Co-Founder of ExpiWell, PI of Florea.AI.">
     <meta name="twitter:image" content="https://louistay.ai/og-image.jpg">
+    <meta name="twitter:image:alt" content="Louis Tay — Well-Being, Measurement, and AI">
     <meta name="twitter:creator" content="@LouisTaySC">
 
     <!-- JSON-LD Structured Data -->
@@ -95,6 +103,7 @@
 
     <!-- Additional SEO -->
     <meta name="theme-color" content="#2563eb">
+    <meta name="color-scheme" content="light">
     <meta name="format-detection" content="telephone=no">
     
     <!-- Fonts -->
@@ -108,7 +117,7 @@
             --accent: #2563eb;
             --accent-dark: #1e40af;
             --warm: #92400e;
-            --muted: #64748b;
+            --muted: #586273;
             --divider: #e2e8f0;
             --card-bg: #ffffff;
             --purdue-gold: #CFB991;
@@ -182,6 +191,7 @@
         .expertise {
             display: flex;
             flex-wrap: wrap;
+            list-style: none;
             gap: 0.5rem;
             margin: 1.5rem 0 2rem;
             animation: fadeUp 0.8s ease-out 0.05s backwards;
@@ -465,6 +475,27 @@
             transform: translateX(0);
         }
 
+        /* Keyboard focus parity — mirror hover affordances for Tab navigation */
+        .link-card:focus-visible {
+            border-color: var(--accent);
+            transform: translateX(4px);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .link-card:focus-visible .arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .featured-card .cta:focus-visible,
+        .social-btn:focus-visible {
+            transform: translateY(-2px);
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
         /* Book list */
         .book-list {
             list-style: none;
@@ -677,6 +708,16 @@
             .social-buttons { flex-direction: column; align-items: center; }
             .social-btn { width: 100%; justify-content: center; }
         }
+
+        /* Respect users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
@@ -688,14 +729,14 @@
             <p class="affiliation" itemprop="jobTitle">William C. Byham Chair in Industrial-Organizational Psychology, <span itemprop="affiliation">Purdue University</span></p>
         </header>
 
-        <nav class="expertise" aria-label="Expertise areas">
-            <span class="pill">Well-Being Science</span>
-            <span class="pill">Psychometrics</span>
-            <span class="pill">AI & Mental Health</span>
-            <span class="pill">Character</span>
-            <span class="pill">Machine Learning</span>
-            <span class="pill">Experience Sampling</span>
-        </nav>
+        <ul class="expertise" aria-label="Areas of expertise">
+            <li class="pill">Well-Being Science</li>
+            <li class="pill">Psychometrics</li>
+            <li class="pill">AI & Mental Health</li>
+            <li class="pill">Character</li>
+            <li class="pill">Machine Learning</li>
+            <li class="pill">Experience Sampling</li>
+        </ul>
 
         <article class="bio" itemprop="description">
             <p>I study how people thrive—developing rigorous measurement methods to capture well-being in all its complexity, and exploring how AI can enhance human flourishing. My work bridges psychological science, advanced psychometrics, and emerging technology.</p>
@@ -883,12 +924,12 @@
             <div class="linkedin-posts">
                 <!-- LinkedIn Embed 1 -->
                 <div class="linkedin-embed">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7422272375712403456?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" title="Louis Tay LinkedIn post about well-being and AI research"></iframe>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7422272375712403456?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post about well-being and AI research"></iframe>
                 </div>
 
                 <!-- LinkedIn Embed 2 -->
                 <div class="linkedin-embed">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7420103687936688128?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" title="Louis Tay LinkedIn post about measurement and psychology"></iframe>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7420103687936688128?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post about measurement and psychology"></iframe>
                 </div>
             </div>
 
