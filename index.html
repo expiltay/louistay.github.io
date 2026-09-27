@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Louis Tay | Well-Being · Measurement · AI | Purdue University</title>
     <meta name="title" content="Louis Tay | Well-Being · Measurement · AI | Purdue University">
-    <meta name="description" content="Louis Tay is the William C. Byham Chair in Industrial-Organizational Psychology at Purdue University. Expert in well-being science, psychometrics, AI & mental health, character strengths, machine learning, and experience sampling methods. Director of WAM Lab, Co-Founder of ExpiWell, and PI of Florea.AI.">
-    <meta name="keywords" content="Louis Tay, well-being, wellbeing, psychometrics, measurement, AI, artificial intelligence, mental health, character strengths, machine learning, experience sampling, ecological momentary assessment, EMA, ESM, industrial-organizational psychology, I-O psychology, Purdue University, WAM Lab, ExpiWell, Florea.AI, positive psychology, scale development, big data psychology">
+    <meta name="description" content="Louis Tay is the William C. Byham Chair in Industrial-Organizational Psychology at Purdue University. Expert in well-being science, psychometrics, AI & mental health, character strengths, machine learning, and experience sampling methods. Director of WAM Lab, Co-Founder of ExpiWell, and PI of Florea.AI. Watch short Research Explained videos on AI bias, measurement, and well-being.">
+    <meta name="keywords" content="Louis Tay, well-being, wellbeing, psychometrics, measurement, AI, artificial intelligence, AI bias, machine learning measurement bias, mental health, character strengths, machine learning, experience sampling, ecological momentary assessment, EMA, ESM, industrial-organizational psychology, I-O psychology, Purdue University, WAM Lab, ExpiWell, Florea.AI, positive psychology, scale development, research explained, explainer videos">
     <meta name="author" content="Louis Tay">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://louistay.ai/">
@@ -87,6 +87,7 @@
             "Mental Health",
             "Character Strengths",
             "Machine Learning",
+            "Machine Learning Measurement Bias",
             "Experience Sampling Methods",
             "Ecological Momentary Assessment",
             "Industrial-Organizational Psychology",
@@ -102,934 +103,1016 @@
     }
     </script>
 
-    <!-- Additional SEO -->
-    <meta name="theme-color" content="#2563eb">
+    <meta name="theme-color" content="#faf9f7">
     <meta name="color-scheme" content="light">
     <meta name="format-detection" content="telephone=no">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ink: #1a1a1a;
+            --ink: #16181d;
+            --ink-2: #3a3f4a;
             --paper: #faf9f7;
+            --paper-2: #f3f1ec;
             --accent: #2563eb;
             --accent-dark: #1e40af;
-            --warm: #92400e;
-            --muted: #586273;
-            --divider: #e2e8f0;
+            --muted: #5b6474;
+            --divider: #e6e2da;
             --card-bg: #ffffff;
             --purdue-gold: #CFB991;
             --purdue-black: #101820;
+            --night: #0e1116;
+            --night-2: #171b22;
+            --night-line: #2a303b;
+            --night-ink: #eef0f4;
+            --night-muted: #9aa3b2;
+            --radius: 16px;
+            --shadow: 0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+            --shadow-lg: 0 2px 4px rgba(16,24,40,.06), 0 18px 48px rgba(16,24,40,.12);
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 18px;
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 17px; scroll-behavior: smooth; scroll-padding-top: 76px; }
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: var(--sans);
             background: var(--paper);
             color: var(--ink);
-            line-height: 1.7;
-            min-height: 100vh;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; }
+        .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+        .skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: #fff; padding: .6rem 1rem; z-index: 100; }
+        .skip:focus { left: 1rem; top: 1rem; }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        /* Header */
-        header {
-            margin-bottom: 2.5rem;
-            animation: fadeUp 0.8s ease-out;
-            text-align: center;
-        }
-
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            border: 4px solid white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 3.2rem;
-            font-weight: 400;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.4rem;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            color: var(--accent-dark);
-            font-weight: 500;
-            letter-spacing: 0.01em;
-        }
-
-        .affiliation {
-            font-size: 0.95rem;
-            color: var(--muted);
-            margin-top: 0.3rem;
-        }
-
-        /* Expertise pills */
-        .expertise {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            gap: 0.5rem;
-            margin: 1.5rem 0 2rem;
-            animation: fadeUp 0.8s ease-out 0.05s backwards;
-            justify-content: center;
-        }
-
-        .pill {
-            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-            color: white;
-            padding: 0.4rem 0.9rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-        }
-
-        /* Bio */
-        .bio {
-            margin-bottom: 3rem;
-            animation: fadeUp 0.8s ease-out 0.1s backwards;
-        }
-
-        .bio p {
-            font-size: 1.05rem;
-            color: var(--ink);
-        }
-
-        .bio p + p {
-            margin-top: 1rem;
-        }
-
-        .bio a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
+        /* ---------- Nav ---------- */
+        .nav {
+            position: sticky; top: 0; z-index: 50;
+            background: rgba(250,249,247,.82);
+            backdrop-filter: saturate(160%) blur(14px);
+            -webkit-backdrop-filter: saturate(160%) blur(14px);
             border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
-        }
-
-        .bio a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* Sections */
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 1.25rem;
-            letter-spacing: 0.01em;
-        }
-
-        h2 .subtle {
-            color: var(--muted);
-            font-weight: 400;
-        }
-
-        /* Featured cards grid */
-        .featured-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-        }
-
-        /* Featured project cards */
-        .featured-card {
-            border-radius: 12px;
-            padding: 2rem;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            animation: fadeUp 0.8s ease-out backwards;
-        }
-
-        .featured-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        /* WAM Lab - Warm teal/green */
-        .featured-card.wam-lab {
-            background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
-            animation-delay: 0.15s;
-        }
-
-        .featured-card.wam-lab .stat {
-            color: #5eead4;
-        }
-
-        .featured-card.wam-lab .featured-label {
-            color: #5eead4;
-        }
-
-        /* ExpiWell - Deep blue tech */
-        .featured-card.expiwell {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
-            animation-delay: 0.2s;
-        }
-
-        .featured-card.expiwell .stat {
-            color: #60a5fa;
-        }
-
-        .featured-card.expiwell .featured-label {
-            color: #60a5fa;
-        }
-
-        /* Purdue I-O - Purdue black and gold */
-        .featured-card.purdue-io {
-            background: linear-gradient(135deg, var(--purdue-black) 0%, #1f2937 100%);
-            animation-delay: 0.25s;
-        }
-
-        .featured-card.purdue-io .stat {
-            color: var(--purdue-gold);
-        }
-
-        .featured-card.purdue-io .featured-label {
-            color: var(--purdue-gold);
-        }
-
-        .featured-card.purdue-io .cta {
-            background: var(--purdue-gold);
-            color: var(--purdue-black);
-        }
-
-        /* Florea.AI - Warm violet/purple */
-        .featured-card.florea {
-            background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
-            animation-delay: 0.3s;
-        }
-
-        .featured-card.florea .stat {
-            color: #c4b5fd;
-        }
-
-        .featured-card.florea .featured-label {
-            color: #c4b5fd;
-        }
-
-        .featured-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .featured-card h3 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .stats-row {
-            display: flex;
-            gap: 2rem;
-            margin: 1rem 0;
-            flex-wrap: wrap;
-        }
-
-        .stat-block .stat {
-            font-size: 1.8rem;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-
-        .stat-block .stat-label {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.7);
-            margin-top: 0.1rem;
-        }
-
-        .featured-card p {
-            font-size: 0.95rem;
-            color: rgba(255,255,255,0.85);
-            margin: 1rem 0;
-            line-height: 1.6;
-        }
-
-        .featured-card .highlight-list {
-            list-style: none;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.85);
-        }
-
-        .featured-card .highlight-list li {
-            padding: 0.3rem 0;
-            padding-left: 1.2rem;
-            position: relative;
-        }
-
-        .featured-card .highlight-list li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            opacity: 0.6;
-        }
-
-        .featured-card .cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: #0f172a;
-            padding: 0.7rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-top: 0.5rem;
-        }
-
-        .featured-card .cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        /* Additional links */
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            animation: fadeUp 0.8s ease-out 0.35s backwards;
-        }
-
-        .link-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.1rem 1.25rem;
-            background: var(--card-bg);
-            border: 1px solid var(--divider);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--ink);
-            transition: all 0.25s ease;
-        }
-
-        .link-card:hover {
-            border-color: var(--accent);
-            transform: translateX(4px);
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
-
-        .link-card .title {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .link-card .desc {
-            font-size: 0.85rem;
-            color: var(--muted);
-            margin-top: 0.15rem;
-        }
-
-        .link-card .arrow {
-            font-size: 1.2rem;
-            color: var(--accent);
-            opacity: 0;
-            transform: translateX(-8px);
-            transition: all 0.25s ease;
-        }
-
-        .link-card:hover .arrow {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* Keyboard focus parity — mirror hover affordances for Tab navigation */
-        .link-card:focus-visible {
-            border-color: var(--accent);
-            transform: translateX(4px);
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            outline: 2px solid var(--accent);
-            outline-offset: 2px;
-        }
-
-        .link-card:focus-visible .arrow {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .featured-card .cta:focus-visible,
-        .social-btn:focus-visible {
-            transform: translateY(-2px);
-            outline: 2px solid var(--accent);
-            outline-offset: 3px;
-        }
-
-        /* Book list */
-        .book-list {
-            list-style: none;
-            animation: fadeUp 0.8s ease-out 0.4s backwards;
-        }
-
-        .book-list li {
-            padding: 0.7rem 0;
-            border-bottom: 1px solid var(--divider);
-            font-size: 0.95rem;
-        }
-
-        .book-list li:last-child {
-            border-bottom: none;
-        }
-
-        .book-list a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: color 0.2s;
-        }
-
-        .book-list a:hover {
-            color: var(--accent);
-        }
-
-        .book-list em {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.05rem;
-            font-style: normal;
-            font-weight: 600;
-        }
-
-        .book-list .meta {
-            color: var(--muted);
-            font-size: 0.85rem;
-        }
-
-        /* LinkedIn embeds section */
-        .linkedin-section {
-            animation: fadeUp 0.8s ease-out 0.45s backwards;
-        }
-
-        .linkedin-posts {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .embed-placeholder {
-            background: #f8fafc;
-            border: 2px dashed var(--divider);
-            border-radius: 8px;
-            padding: 2rem;
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-
-        .embed-placeholder code {
-            display: block;
-            margin-top: 0.5rem;
-            font-size: 0.8rem;
-            color: var(--accent);
-        }
-
-        .linkedin-embed {
-            background: var(--card-bg);
-            border: 1px solid var(--divider);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .linkedin-embed iframe {
-            display: block;
-            max-width: 100%;
-        }
-
-        /* Social CTA */
-        .social-cta {
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-            border: 1px solid var(--divider);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 2rem;
-            animation: fadeUp 0.8s ease-out 0.5s backwards;
-        }
-
-        .social-cta h3 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .social-cta p {
-            color: var(--muted);
-            font-size: 0.95rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.7rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .social-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .social-btn.linkedin {
-            background: #0a66c2;
-            color: white;
-        }
-
-        .social-btn.x {
-            background: #0f1419;
-            color: white;
-        }
-
-        .social-btn.bluesky {
-            background: #0085ff;
-            color: white;
-        }
-
-        .social-btn svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
-        }
-
-        /* Contact */
-        .contact-section {
-            animation: fadeUp 0.8s ease-out 0.55s backwards;
-        }
-
-        .contact-info {
-            font-size: 0.95rem;
-        }
-
-        .contact-info a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
-        }
-
-        .contact-info a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--divider);
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.85rem;
-            animation: fadeUp 0.8s ease-out 0.6s backwards;
-        }
-
-        footer a {
-            color: var(--muted);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--accent);
-        }
-
-        /* Animations */
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
+            transition: border-color .3s, box-shadow .3s;
+        }
+        .nav.scrolled { border-bottom-color: var(--divider); box-shadow: 0 4px 20px rgba(16,24,40,.04); }
+        .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; letter-spacing: -.01em; }
+        .brand .mono { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #7c3aed); color: #fff; display: grid; place-items: center; font-family: var(--sans); font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
+        .nav ul { list-style: none; display: flex; gap: .25rem; }
+        .nav ul a { text-decoration: none; font-size: .88rem; font-weight: 500; color: var(--ink-2); padding: .45rem .8rem; border-radius: 999px; transition: background .2s, color .2s; }
+        .nav ul a:hover, .nav ul a:focus-visible { background: var(--paper-2); color: var(--ink); }
+        .nav ul a.cta-nav { background: var(--ink); color: #fff; }
+        .nav ul a.cta-nav:hover { background: var(--accent-dark); color: #fff; }
+
+        /* ---------- Hero ---------- */
+        .hero { position: relative; padding: 4.5rem 0 3.5rem; overflow: hidden; }
+        .hero::before, .hero::after {
+            content: ''; position: absolute; border-radius: 50%; filter: blur(70px); opacity: .55; z-index: -1; pointer-events: none;
+        }
+        .hero::before { width: 520px; height: 520px; right: -120px; top: -160px; background: radial-gradient(circle, #c7d7fe 0%, transparent 70%); }
+        .hero::after { width: 460px; height: 460px; left: -160px; bottom: -200px; background: radial-gradient(circle, #d7f0ea 0%, transparent 70%); }
+        .hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 3.5rem; align-items: center; }
+        .eyebrow { font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-dark); }
+        .hero h1 { font-family: var(--serif); font-size: clamp(3rem, 7vw, 5rem); font-weight: 500; line-height: .98; letter-spacing: -.025em; margin: .6rem 0 .9rem; }
+        .hero .role { font-size: 1.02rem; color: var(--muted); margin-bottom: 1.4rem; }
+        .hero .lede { font-family: var(--serif); font-size: 1.6rem; line-height: 1.3; color: var(--ink); margin-bottom: 1rem; font-weight: 500; }
+        .hero .lede em { font-style: italic; color: var(--accent-dark); }
+        .hero p.body { font-size: 1.02rem; color: var(--ink-2); max-width: 36rem; }
+        .hero p.body a { color: var(--accent-dark); font-weight: 600; text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-size: 0 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .25s; }
+        .hero p.body a:hover { background-size: 100% 1.5px; }
+        .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.8rem; }
+        .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .78rem 1.2rem; border-radius: 999px; font-weight: 600; font-size: .92rem; text-decoration: none; transition: transform .2s, box-shadow .2s, background .2s; border: 1px solid transparent; }
+        .btn svg { width: 16px; height: 16px; fill: currentColor; }
+        .btn.primary { background: var(--ink); color: #fff; box-shadow: 0 6px 18px rgba(22,24,29,.18); }
+        .btn.primary:hover { transform: translateY(-2px); background: #000; }
+        .btn.ghost { background: #fff; border-color: var(--divider); color: var(--ink); }
+        .btn.ghost:hover { transform: translateY(-2px); border-color: var(--ink-2); }
+        .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+        .portrait { position: relative; justify-self: center; display: grid; place-items: center; width: 320px; height: 320px; }
+        .portrait .ring { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 200deg, #93c5fd, #a78bfa, #5eead4, #fcd34d, #93c5fd); padding: 3px; animation: spin 24s linear infinite; }
+        .portrait .ring::after { content: ''; position: absolute; inset: 3px; border-radius: 50%; background: var(--paper); }
+        .portrait .disc { position: absolute; inset: 34px; border-radius: 50%; background: linear-gradient(145deg, #ffffff, #eef2ff); box-shadow: var(--shadow-lg); }
+        .portrait img { position: relative; width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; box-shadow: 0 10px 30px rgba(16,24,40,.18); }
+        .portrait .chip { position: absolute; background: #fff; border: 1px solid var(--divider); border-radius: 999px; padding: .35rem .8rem; font-size: .76rem; font-weight: 600; color: var(--ink-2); box-shadow: var(--shadow); white-space: nowrap; }
+        .portrait .chip b { color: var(--accent-dark); }
+        .portrait .c1 { top: 26px; left: -18px; }
+        .portrait .c2 { top: 146px; right: -44px; }
+        .portrait .c3 { bottom: 22px; left: 6px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 3.2rem; background: #fff; border: 1px solid var(--divider); border-radius: var(--radius); box-shadow: var(--shadow); }
+        .stats div { padding: 1.25rem 1.4rem; }
+        .stats div + div { border-left: 1px solid var(--divider); }
+        .stats b { display: block; font-family: var(--serif); font-size: 2.1rem; font-weight: 600; line-height: 1; letter-spacing: -.01em; }
+        .stats span { display: block; font-size: .82rem; color: var(--muted); margin-top: .35rem; }
+
+        .expertise { display: flex; flex-wrap: wrap; list-style: none; gap: .5rem; margin-top: 1.6rem; }
+        .expertise li { font-size: .8rem; font-weight: 500; padding: .38rem .85rem; border-radius: 999px; background: #fff; border: 1px solid var(--divider); color: var(--ink-2); }
+
+        /* ---------- Sections ---------- */
+        section.block { padding: 4.5rem 0; }
+        .head { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .head h2 { font-family: var(--serif); font-size: clamp(2.1rem, 4vw, 2.8rem); font-weight: 500; line-height: 1.05; letter-spacing: -.02em; margin-top: .35rem; }
+        .head p { color: var(--muted); max-width: 30rem; font-size: .98rem; }
+
+        /* ---------- Leadership ---------- */
+        .featured-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+        .featured-card { border-radius: var(--radius); padding: 2rem; color: #fff; position: relative; overflow: hidden; display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
+        .featured-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+        .featured-card::before { content: ''; position: absolute; top: -40%; right: -30%; width: 90%; height: 110%; background: radial-gradient(circle, rgba(255,255,255,.13) 0%, transparent 60%); pointer-events: none; }
+        .featured-card.wam-lab { background: linear-gradient(140deg, #0f3d3a 0%, #0f766e 100%); }
+        .featured-card.wam-lab .stat, .featured-card.wam-lab .featured-label { color: #5eead4; }
+        .featured-card.expiwell { background: linear-gradient(140deg, #0b1222 0%, #1e3a5f 100%); }
+        .featured-card.expiwell .stat, .featured-card.expiwell .featured-label { color: #7cb7ff; }
+        .featured-card.purdue-io { background: linear-gradient(140deg, var(--purdue-black) 0%, #243041 100%); }
+        .featured-card.purdue-io .stat, .featured-card.purdue-io .featured-label { color: var(--purdue-gold); }
+        .featured-card.purdue-io .cta { background: var(--purdue-gold); color: var(--purdue-black); }
+        .featured-card.florea { background: linear-gradient(140deg, #3b1780 0%, #7c3aed 100%); }
+        .featured-card.florea .stat, .featured-card.florea .featured-label { color: #d4c8ff; }
+        .featured-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: .5rem; font-weight: 700; }
+        .featured-card h3 { font-family: var(--serif); font-size: 1.9rem; font-weight: 600; line-height: 1.1; margin-bottom: .3rem; }
+        .stats-row { display: flex; gap: 2rem; margin: 1rem 0 .3rem; flex-wrap: wrap; }
+        .stat-block .stat { font-size: 1.7rem; font-weight: 700; line-height: 1.2; }
+        .stat-block .stat-label { font-size: .78rem; color: rgba(255,255,255,.72); margin-top: .1rem; }
+        .featured-card p { font-size: .93rem; color: rgba(255,255,255,.86); margin: .8rem 0; line-height: 1.6; }
+        .featured-card .highlight-list { list-style: none; margin: .3rem 0 1rem; font-size: .88rem; color: rgba(255,255,255,.86); }
+        .featured-card .highlight-list li { padding: .22rem 0 .22rem 1.2rem; position: relative; }
+        .featured-card .highlight-list li::before { content: '→'; position: absolute; left: 0; opacity: .6; }
+        .featured-card .cta { display: inline-flex; align-self: flex-start; align-items: center; gap: .5rem; margin-top: auto; background: #fff; color: #0f172a; padding: .65rem 1.1rem; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: .88rem; transition: transform .2s, box-shadow .2s; }
+        .featured-card .cta:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.3); }
+        .featured-card .cta:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+        /* ---------- Explainers (dark band) ---------- */
+        .videos { background: var(--night); color: var(--night-ink); position: relative; overflow: hidden; }
+        .videos::before { content: ''; position: absolute; width: 700px; height: 700px; right: -220px; top: -300px; background: radial-gradient(circle, rgba(37,99,235,.28) 0%, transparent 65%); pointer-events: none; }
+        .videos::after { content: ''; position: absolute; width: 600px; height: 600px; left: -260px; bottom: -260px; background: radial-gradient(circle, rgba(124,58,237,.22) 0%, transparent 65%); pointer-events: none; }
+        .videos .wrap { position: relative; z-index: 1; }
+        .videos .eyebrow { color: #8fb4ff; }
+        .videos .head p { color: var(--night-muted); }
+        .videos .head p small { display: block; margin-top: .5rem; font-size: .8rem; opacity: .85; }
+
+        .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: -.4rem 0 1.8rem; }
+        .filters button { font: inherit; font-size: .84rem; font-weight: 600; color: var(--night-muted); background: transparent; border: 1px solid var(--night-line); padding: .45rem .95rem; border-radius: 999px; cursor: pointer; transition: all .2s; }
+        .filters button:hover { color: #fff; border-color: #4b5563; }
+        .filters button[aria-pressed="true"] { background: #fff; color: var(--night); border-color: #fff; }
+        .filters button:focus-visible { outline: 2px solid #8fb4ff; outline-offset: 2px; }
+
+        .feature { display: grid; grid-template-columns: 1.35fr 1fr; gap: 0; background: var(--night-2); border: 1px solid var(--night-line); border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; margin-bottom: 1.5rem; transition: border-color .3s, transform .3s; }
+        .feature:hover { border-color: #3d4656; transform: translateY(-3px); }
+        .feature-media { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #000; }
+        .feature-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+        .feature:hover .feature-media img { transform: scale(1.03); }
+        .feature-body { padding: 2rem 2.2rem; display: flex; flex-direction: column; justify-content: center; }
+        .feature-body .eyebrow { margin-bottom: .6rem; }
+        .feature-body h3 { font-family: var(--serif); font-size: 2.1rem; line-height: 1.08; font-weight: 600; letter-spacing: -.01em; margin-bottom: .8rem; }
+        .feature-body p { color: #c8cdd7; font-size: .97rem; margin-bottom: 1rem; }
+
+        .play { position: absolute; left: 50%; top: 50%; width: 58px; height: 58px; margin: -29px 0 0 -29px; border-radius: 50%; background: rgba(255,255,255,.94); display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.35); transition: transform .25s, background .25s; }
+        .play svg { width: 24px; height: 24px; fill: var(--night); margin-left: 3px; }
+        .play.big { width: 78px; height: 78px; margin: -39px 0 0 -39px; }
+        .play.big svg { width: 32px; height: 32px; }
+        .js-play:hover .play, .js-play:focus-visible .play { transform: scale(1.1); background: #fff; }
+        .dur { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,.78); color: #fff; font-size: .75rem; font-weight: 600; padding: .15rem .45rem; border-radius: 6px; letter-spacing: .02em; }
+
+        .vgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+        .series-panel { grid-template-columns: .9fr 1.4fr; }
+        .series-panel:hover { transform: none; }
+        .parts { display: flex; flex-direction: column; gap: .75rem; padding: 1.2rem; }
+        .part { display: grid; grid-template-columns: 200px 1fr; gap: 1rem; align-items: center; text-decoration: none; color: inherit; padding: .5rem; border-radius: 12px; transition: background .25s; }
+        .part:hover { background: rgba(255,255,255,.05); }
+        .pthumb { position: relative; aspect-ratio: 16/9; border-radius: 10px; overflow: hidden; background: #000; display: block; }
+        .pthumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+        .part:hover .pthumb img { transform: scale(1.05); }
+        .pthumb .play { width: 40px; height: 40px; margin: -20px 0 0 -20px; }
+        .pthumb .play svg { width: 16px; height: 16px; }
+        .pthumb .dur { right: 6px; bottom: 6px; font-size: .7rem; }
+        .ptext { display: flex; flex-direction: column; gap: .15rem; }
+        .pnum { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #8fb4ff; }
+        .ptitle { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; line-height: 1.15; }
+        .pblurb { font-size: .84rem; color: #b7bdc9; line-height: 1.5; }
+        .vcard { background: var(--night-2); border: 1px solid var(--night-line); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .3s, border-color .3s, opacity .3s; }
+        .vcard:hover { transform: translateY(-4px); border-color: #3d4656; }
+        .vcard.hide { display: none; }
+        .thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #000; }
+        .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+        .vcard:hover .thumb img, .talk:hover .thumb img { transform: scale(1.05); }
+        .vbody { padding: 1.1rem 1.2rem 1.25rem; display: flex; flex-direction: column; flex: 1; }
+        .series { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #8fb4ff; margin-bottom: .35rem; }
+        .vcard h4 { font-family: var(--serif); font-size: 1.28rem; line-height: 1.15; font-weight: 600; margin-bottom: .5rem; }
+        .vcard p { font-size: .87rem; color: #b7bdc9; line-height: 1.55; margin-bottom: .8rem; }
+        .cite { font-size: .78rem; color: var(--night-muted); margin-top: auto; }
+        .cite em { font-style: italic; }
+        .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+        .tag { font-size: .7rem; font-weight: 600; letter-spacing: .02em; padding: .18rem .55rem; border-radius: 999px; background: rgba(143,180,255,.12); color: #b9ceff; }
+        .js-play:focus-visible { outline: 2px solid #8fb4ff; outline-offset: 3px; }
+        .empty { display: none; color: var(--night-muted); padding: 1rem 0; }
+
+        .subhead { display: flex; justify-content: space-between; align-items: center; margin: 3.2rem 0 1.1rem; gap: 1rem; }
+        .subhead h3 { font-family: var(--serif); font-size: 1.7rem; font-weight: 500; }
+        .subhead h3 span { color: var(--night-muted); font-size: 1.1rem; }
+        .scroller-btns { display: flex; gap: .5rem; }
+        .scroller-btns button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--night-line); background: transparent; color: #fff; cursor: pointer; font-size: 1.1rem; transition: background .2s; }
+        .scroller-btns button:hover { background: var(--night-2); }
+        .scroller-btns button:focus-visible { outline: 2px solid #8fb4ff; outline-offset: 2px; }
+
+        .shorts { display: grid; grid-auto-flow: column; grid-auto-columns: 176px; gap: .9rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .8rem; scrollbar-width: thin; scrollbar-color: #3d4656 transparent; }
+        .short { position: relative; aspect-ratio: 9/16; border-radius: 14px; overflow: hidden; background: #000; scroll-snap-align: start; text-decoration: none; color: #fff; border: 1px solid var(--night-line); }
+        .short img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+        .short:hover img { transform: scale(1.05); }
+        .short::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.2) 45%, transparent 70%); }
+        .short .play { width: 44px; height: 44px; margin: -22px 0 0 -22px; z-index: 1; opacity: 0; }
+        .short:hover .play, .short:focus-visible .play { opacity: 1; }
+        .short .play svg { width: 18px; height: 18px; }
+        .stitle { position: absolute; left: .7rem; right: .7rem; bottom: .7rem; z-index: 1; font-size: .8rem; font-weight: 600; line-height: 1.3; }
+
+        .talks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+        .talk { text-decoration: none; color: inherit; }
+        .talk .thumb { border-radius: 12px; border: 1px solid var(--night-line); }
+        .talk h4 { font-size: .92rem; font-weight: 600; margin-top: .65rem; line-height: 1.35; color: #dfe3ea; }
+
+        .more-links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2.6rem; }
+        .videos .btn.primary { background: #fff; color: var(--night); box-shadow: none; }
+        .videos .btn.primary:hover { background: #e8edff; }
+        .videos .btn.ghost { background: transparent; border-color: var(--night-line); color: #fff; }
+        .videos .btn.ghost:hover { border-color: #6b7280; }
+
+        /* ---------- Modal player ---------- */
+        .modal { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 1.5rem; background: rgba(6,8,12,.86); backdrop-filter: blur(6px); }
+        .modal.open { display: flex; animation: fade .25s ease; }
+        .modal-inner { width: min(1100px, 100%); }
+        .modal-inner.short-mode { width: min(420px, 100%); }
+        .modal-frame { position: relative; aspect-ratio: 16/9; background: #000; border-radius: 14px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.6); }
+        .short-mode .modal-frame { aspect-ratio: 9/16; max-height: 82vh; margin: 0 auto; }
+        .modal-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+        .modal-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: #fff; margin-bottom: .8rem; }
+        .modal-bar h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; }
+        .modal-bar a { color: #b9ceff; font-size: .85rem; white-space: nowrap; }
+        .modal-close { background: rgba(255,255,255,.12); color: #fff; border: 0; width: 40px; height: 40px; border-radius: 50%; font-size: 1.3rem; cursor: pointer; flex: none; }
+        .modal-close:hover { background: rgba(255,255,255,.22); }
+        .modal-close:focus-visible { outline: 2px solid #8fb4ff; outline-offset: 2px; }
+        @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+        /* ---------- Tools ---------- */
+        .tools { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .tool { display: flex; gap: 1rem; align-items: flex-start; padding: 1.35rem 1.4rem; background: #fff; border: 1px solid var(--divider); border-radius: var(--radius); text-decoration: none; transition: transform .25s, box-shadow .25s, border-color .25s; }
+        .tool:hover, .tool:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: #d4cfc4; }
+        .tool:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .tool .ic { flex: none; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; }
+        .tool .ic svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .tool .title { font-weight: 700; font-size: 1rem; }
+        .tool .desc { font-size: .87rem; color: var(--muted); margin-top: .15rem; }
+        .tool .go { margin-left: auto; color: var(--muted); transition: transform .25s, color .25s; align-self: center; }
+        .tool:hover .go { transform: translateX(4px); color: var(--accent); }
+
+        /* ---------- Books ---------- */
+        .books { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+        .book { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; align-items: center; padding: 1rem; background: #fff; border: 1px solid var(--divider); border-radius: var(--radius); text-decoration: none; transition: transform .25s, box-shadow .25s; }
+        .book:hover, .book:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+        .book:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .cover { height: 88px; border-radius: 4px 8px 8px 4px; position: relative; box-shadow: inset 5px 0 0 rgba(0,0,0,.18), 0 6px 14px rgba(16,24,40,.18); display: flex; align-items: flex-end; padding: .4rem; }
+        .cover::after { content: ''; position: absolute; left: 10px; right: 8px; top: 12px; height: 2px; background: rgba(255,255,255,.55); box-shadow: 0 6px 0 rgba(255,255,255,.35); }
+        .book .t { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; line-height: 1.15; }
+        .book .m { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+
+        /* ---------- Writing ---------- */
+        .writing { background: var(--paper-2); }
+        .linkedin-posts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+        .linkedin-embed { background: var(--card-bg); border: 1px solid var(--divider); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .linkedin-embed iframe { display: block; max-width: 100%; }
+        .social-buttons { display: flex; gap: .7rem; flex-wrap: wrap; }
+        .social-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.15rem; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: .88rem; transition: transform .2s, box-shadow .2s; color: #fff; }
+        .social-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.18); }
+        .social-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+        .social-btn.linkedin { background: #0a66c2; }
+        .social-btn.x { background: #0f1419; }
+        .social-btn.bluesky { background: #0085ff; }
+        .social-btn.youtube { background: #e11d2e; }
+        .social-btn svg { width: 17px; height: 17px; fill: currentColor; }
+
+        /* ---------- Contact / footer ---------- */
+        .contact { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; background: #fff; border: 1px solid var(--divider); border-radius: 22px; padding: 2.6rem; box-shadow: var(--shadow); }
+        .contact h2 { font-family: var(--serif); font-size: 2.4rem; font-weight: 500; line-height: 1.05; letter-spacing: -.02em; margin: .35rem 0 .6rem; }
+        .contact p { color: var(--muted); }
+        .contact .mail { font-family: var(--serif); font-size: 1.7rem; font-weight: 600; color: var(--accent-dark); text-decoration: none; border-bottom: 2px solid #c7d7fe; transition: border-color .2s; }
+        .contact .mail:hover { border-color: var(--accent-dark); }
+        footer { padding: 3rem 0 3.5rem; text-align: center; color: var(--muted); font-size: .84rem; }
+        footer a { color: var(--muted); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
+
+        /* ---------- Reveal ---------- */
+        .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+        .reveal.in { opacity: 1; transform: none; }
+        .no-js .reveal { opacity: 1; transform: none; }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 960px) {
+            .vgrid { grid-template-columns: repeat(2, 1fr); }
+            .books { grid-template-columns: repeat(2, 1fr); }
+            .feature, .series-panel { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 820px) {
+            .nav ul li:not(.keep) { display: none; }
+            .hero { padding-top: 2.5rem; }
+            .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .portrait { order: -1; width: 250px; height: 250px; }
+            .portrait .disc { inset: 26px; }
+            .portrait img { width: 150px; height: 150px; }
+            .portrait .c2 { right: -30px; top: 110px; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .stats div:nth-child(3) { border-left: 0; }
+            .stats div:nth-child(n+3) { border-top: 1px solid var(--divider); }
+            .featured-grid, .tools, .linkedin-posts, .contact { grid-template-columns: 1fr; }
+            .talks { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 560px) {
             html { font-size: 16px; }
-            h1 { font-size: 2.4rem; }
-            .container { padding: 2.5rem 1.5rem; }
-            .profile-photo { width: 140px; height: 140px; }
+            .wrap { padding: 0 1rem; }
+            section.block { padding: 3.2rem 0; }
+            .vgrid, .books, .talks { grid-template-columns: 1fr; }
+            .feature-body { padding: 1.4rem; }
+            .feature-body h3 { font-size: 1.7rem; }
             .featured-card { padding: 1.5rem; }
-            .featured-card h3 { font-size: 1.5rem; }
-            .stats-row { gap: 1.5rem; }
-            .stat-block .stat { font-size: 1.5rem; }
-            .social-buttons { flex-direction: column; align-items: center; }
-            .social-btn { width: 100%; justify-content: center; }
+            .contact { padding: 1.6rem; }
+            .contact .mail { font-size: 1.35rem; }
+            .portrait .chip { font-size: .7rem; }
+            .portrait .c1 { left: -8px; }
+            .portrait .c2 { right: -12px; }
+            .shorts { grid-auto-columns: 150px; }
+            .part { grid-template-columns: 1fr; }
         }
-
-        /* Respect users who prefer reduced motion */
         @media (prefers-reduced-motion: reduce) {
             html { scroll-behavior: auto; }
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
+            *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+            .reveal { opacity: 1; transform: none; }
         }
     </style>
 </head>
-<body itemscope itemtype="https://schema.org/Person">
-    <main class="container" role="main">
-        <header>
-            <img src="profile-photo.jpg" alt="Louis Tay - Psychologist and Measurement Scientist at Purdue University" class="profile-photo" itemprop="image" width="180" height="180">
-            <h1 itemprop="name">Louis Tay</h1>
-            <p class="tagline" aria-label="Areas of expertise">Well-Being · Measurement · AI</p>
-            <p class="affiliation" itemprop="jobTitle">William C. Byham Chair in Industrial-Organizational Psychology, <span itemprop="affiliation">Purdue University</span></p>
+<body itemscope itemtype="https://schema.org/Person" class="no-js">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <div class="wrap">
+            <a href="#top" class="brand"><span class="mono" aria-hidden="true">LT</span>Louis Tay</a>
+            <ul>
+                <li><a href="#leadership">Leadership</a></li>
+                <li class="keep"><a href="#explainers">Explainers</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li class="keep"><a href="#contact" class="cta-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main" role="main">
+        <!-- Hero -->
+        <header class="hero" id="top">
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div class="reveal">
+                        <div class="eyebrow">Well-Being · Measurement · AI</div>
+                        <h1 itemprop="name">Louis Tay</h1>
+                        <p class="role" itemprop="jobTitle">William C. Byham Chair in Industrial-Organizational Psychology, <span itemprop="affiliation">Purdue University</span></p>
+                        <p class="lede">How do people <em>thrive</em>, and how do we measure it well enough to know?</p>
+                        <div itemprop="description">
+                            <p class="body">I study how people thrive—developing rigorous measurement methods to capture well-being in all its complexity, and exploring how AI can enhance human flourishing. My work bridges psychological science, advanced psychometrics, and emerging technology.</p>
+                            <p class="body" style="margin-top:.8rem">I direct the <a href="https://www.wam-lab.com">WAM Lab</a>, co-founded <a href="https://www.expiwell.com">ExpiWell</a>, coordinate <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/">Purdue's Industrial-Organizational Psychology program</a>, and lead <a href="https://florea.ai/">Florea.AI</a>—a John Templeton Foundation project developing virtue-centered AI conversational agents.</p>
+                        </div>
+                        <div class="actions">
+                            <a class="btn primary" href="#explainers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>Watch the explainers</a>
+                            <a class="btn ghost" href="https://scholar.google.com/citations?hl=en&amp;user=5_1xpscAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
+                            <a class="btn ghost" href="https://www.wam-lab.com">WAM Lab</a>
+                        </div>
+                    </div>
+                    <div class="portrait reveal" aria-hidden="false">
+                        <span class="ring" aria-hidden="true"></span>
+                        <span class="disc" aria-hidden="true"></span>
+                        <img src="profile-photo.jpg" alt="Louis Tay - Psychologist and Measurement Scientist at Purdue University" itemprop="image" width="180" height="180">
+                        <span class="chip c1" aria-hidden="true"><b>200+</b> publications</span>
+                        <span class="chip c2" aria-hidden="true">Co-founder, <b>ExpiWell</b></span>
+                        <span class="chip c3" aria-hidden="true">PI, <b>Florea.AI</b></span>
+                    </div>
+                </div>
+
+                <div class="stats reveal" aria-label="At a glance">
+                    <div><b>200+</b><span>Publications</span></div>
+                    <div><b>6,300+</b><span>Researchers on ExpiWell</span></div>
+                    <div><b>Top 7</b><span>Purdue I-O Psychology (US News)</span></div>
+                    <div><b>11</b><span>Research explainer videos</span></div>
+                </div>
+
+                <ul class="expertise reveal" aria-label="Areas of expertise">
+                    <li>Well-Being Science</li>
+                    <li>Psychometrics</li>
+                    <li>AI &amp; Mental Health</li>
+                    <li>AI Bias &amp; Fairness</li>
+                    <li>Character</li>
+                    <li>Machine Learning</li>
+                    <li>Experience Sampling</li>
+                </ul>
+            </div>
         </header>
 
-        <ul class="expertise" aria-label="Areas of expertise">
-            <li class="pill">Well-Being Science</li>
-            <li class="pill">Psychometrics</li>
-            <li class="pill">AI & Mental Health</li>
-            <li class="pill">Character</li>
-            <li class="pill">Machine Learning</li>
-            <li class="pill">Experience Sampling</li>
-        </ul>
-
-        <article class="bio" itemprop="description">
-            <p>I study how people thrive—developing rigorous measurement methods to capture well-being in all its complexity, and exploring how AI can enhance human flourishing. My work bridges psychological science, advanced psychometrics, and emerging technology.</p>
-            <p>I direct the <a href="https://www.wam-lab.com">WAM Lab</a>, co-founded <a href="https://www.expiwell.com">ExpiWell</a>, coordinate <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/">Purdue's Industrial-Organizational Psychology program</a>, and lead <a href="https://florea.ai/">Florea.AI</a>—a John Templeton Foundation project developing virtue-centered AI conversational agents.</p>
-        </article>
-
-        <!-- Leadership Roles -->
-        <section aria-label="Leadership roles and projects">
-            <h2>Leadership</h2>
-            <div class="featured-grid">
-
-                <!-- WAM Lab -->
-                <div class="featured-card wam-lab">
-                    <div class="featured-label">Director</div>
-                    <h3>WAM Lab</h3>
-                    <p style="margin-top: 0.5rem;">Well-Being, AI, and Measurement Lab at Purdue University</p>
-                    <div class="stats-row">
-                        <div class="stat-block">
-                            <div class="stat">200+</div>
-                            <div class="stat-label">Publications</div>
-                        </div>
+        <!-- Leadership -->
+        <section class="block" id="leadership" aria-label="Leadership roles and projects" style="padding-top:2rem">
+            <div class="wrap">
+                <div class="head reveal">
+                    <div>
+                        <div class="eyebrow">What I lead</div>
+                        <h2>Leadership</h2>
                     </div>
-                    <p>Cross-disciplinary research combining well-being science, advanced measurement methods, and AI applications. We develop tools and frameworks that advance how researchers study human flourishing.</p>
-                    <ul class="highlight-list">
-                        <li>AI bias detection and measurement frameworks</li>
-                        <li>Workplace well-being and sustainable careers</li>
-                        <li>Character strengths and human flourishing</li>
-                        <li>Psychometric methods and scale development</li>
-                    </ul>
-                    <a href="https://www.wam-lab.com" class="cta">
-                        Visit WAM Lab
-                        <span>→</span>
-                    </a>
+                    <p>A lab, a research platform, a top-ranked doctoral program, and a foundation-funded AI project.</p>
                 </div>
-                
-                <!-- ExpiWell -->
-                <div class="featured-card expiwell">
-                    <div class="featured-label">Co-Founder</div>
-                    <h3>ExpiWell</h3>
-                    <div class="stats-row">
-                        <div class="stat-block">
-                            <div class="stat">6,300+</div>
-                            <div class="stat-label">Researchers worldwide</div>
+                <div class="featured-grid">
+                    <div class="featured-card wam-lab reveal">
+                        <div class="featured-label">Director</div>
+                        <h3>WAM Lab</h3>
+                        <p style="margin-top:.2rem">Well-Being, AI, and Measurement Lab at Purdue University</p>
+                        <div class="stats-row">
+                            <div class="stat-block"><div class="stat">200+</div><div class="stat-label">Publications</div></div>
                         </div>
-                        <div class="stat-block">
-                            <div class="stat">#1</div>
-                            <div class="stat-label">EMA/ESM platform</div>
-                        </div>
+                        <p>Cross-disciplinary research combining well-being science, advanced measurement methods, and AI applications. We develop tools and frameworks that advance how researchers study human flourishing.</p>
+                        <ul class="highlight-list">
+                            <li>AI bias detection and measurement frameworks</li>
+                            <li>Workplace well-being and sustainable careers</li>
+                            <li>Character strengths and human flourishing</li>
+                            <li>Psychometric methods and scale development</li>
+                        </ul>
+                        <a href="https://www.wam-lab.com" class="cta">Visit WAM Lab <span aria-hidden="true">→</span></a>
                     </div>
-                    <p>The leading platform for ecological momentary assessment and experience sampling research. ExpiWell empowers researchers to capture real-time data on thoughts, feelings, and behaviors as they unfold in daily life.</p>
-                    <a href="https://www.expiwell.com" class="cta">
-                        Explore ExpiWell
-                        <span>→</span>
-                    </a>
-                </div>
 
-                <!-- Purdue I-O Psychology -->
-                <div class="featured-card purdue-io">
-                    <div class="featured-label">Program Coordinator</div>
-                    <h3>Purdue Industrial-Organizational Psychology</h3>
-                    <div class="stats-row">
-                        <div class="stat-block">
-                            <div class="stat">Top 7</div>
-                            <div class="stat-label">US News ranking</div>
+                    <div class="featured-card expiwell reveal">
+                        <div class="featured-label">Co-Founder</div>
+                        <h3>ExpiWell</h3>
+                        <div class="stats-row">
+                            <div class="stat-block"><div class="stat">6,300+</div><div class="stat-label">Researchers worldwide</div></div>
+                            <div class="stat-block"><div class="stat">#1</div><div class="stat-label">EMA/ESM platform</div></div>
                         </div>
-                        <div class="stat-block">
-                            <div class="stat">PhD</div>
-                            <div class="stat-label">Doctoral program</div>
-                        </div>
+                        <p>The leading platform for ecological momentary assessment and experience sampling research. ExpiWell empowers researchers to capture real-time data on thoughts, feelings, and behaviors as they unfold in daily life.</p>
+                        <a href="https://www.expiwell.com" class="cta">Explore ExpiWell <span aria-hidden="true">→</span></a>
                     </div>
-                    <p>One of the world's premier Industrial-Organizational Psychology doctoral programs. We train the next generation of scientists and practitioners to tackle critical challenges in work, organizations, and human performance.</p>
-                    <ul class="highlight-list">
-                        <li>Broad faculty expertise: measurement, personality, selection, teams, leadership, well-being, motivation, human-AI collaboration</li>
-                        <li>Strong placement record in academia and industry</li>
-                        <li>Collaborative, supportive training environment</li>
-                        <li>Cutting-edge research on AI, big data, and the future of work</li>
-                    </ul>
-                    <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/" class="cta">
-                        Explore the Program
-                        <span>→</span>
-                    </a>
-                </div>
 
-                <!-- Florea.AI -->
-                <div class="featured-card florea">
-                    <div class="featured-label">Principal Investigator</div>
-                    <h3>Florea.AI</h3>
-                    <div class="stats-row">
-                        <div class="stat-block">
-                            <div class="stat">JTF</div>
-                            <div class="stat-label">John Templeton Foundation funded</div>
+                    <div class="featured-card purdue-io reveal">
+                        <div class="featured-label">Program Coordinator</div>
+                        <h3>Purdue Industrial-Organizational Psychology</h3>
+                        <div class="stats-row">
+                            <div class="stat-block"><div class="stat">Top 7</div><div class="stat-label">US News ranking</div></div>
+                            <div class="stat-block"><div class="stat">PhD</div><div class="stat-label">Doctoral program</div></div>
                         </div>
+                        <p>One of the world's premier Industrial-Organizational Psychology doctoral programs. We train the next generation of scientists and practitioners to tackle critical challenges in work, organizations, and human performance.</p>
+                        <ul class="highlight-list">
+                            <li>Broad faculty expertise: measurement, personality, selection, teams, leadership, well-being, motivation, human-AI collaboration</li>
+                            <li>Strong placement record in academia and industry</li>
+                            <li>Collaborative, supportive training environment</li>
+                            <li>Cutting-edge research on AI, big data, and the future of work</li>
+                        </ul>
+                        <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/" class="cta">Explore the Program <span aria-hidden="true">→</span></a>
                     </div>
-                    <p>Developing virtue-centered AI conversational agents that support human flourishing. This research explores how AI can be designed to cultivate character strengths and promote well-being through meaningful dialogue.</p>
-                    <ul class="highlight-list">
-                        <li>AI agents grounded in virtue ethics and character science</li>
-                        <li>Therapeutic conversation assessment frameworks</li>
-                        <li>Reporting guidelines for AI conversational agents</li>
-                        <li>Cross-disciplinary collaboration across psychology, philosophy, and computer science</li>
-                    </ul>
-                    <a href="https://florea.ai/" class="cta">
-                        Learn More
-                        <span>→</span>
-                    </a>
-                </div>
 
+                    <div class="featured-card florea reveal">
+                        <div class="featured-label">Principal Investigator</div>
+                        <h3>Florea.AI</h3>
+                        <div class="stats-row">
+                            <div class="stat-block"><div class="stat">JTF</div><div class="stat-label">John Templeton Foundation funded</div></div>
+                        </div>
+                        <p>Developing virtue-centered AI conversational agents that support human flourishing. This research explores how AI can be designed to cultivate character strengths and promote well-being through meaningful dialogue.</p>
+                        <ul class="highlight-list">
+                            <li>AI agents grounded in virtue ethics and character science</li>
+                            <li>Therapeutic conversation assessment frameworks</li>
+                            <li>Reporting guidelines for AI conversational agents</li>
+                            <li>Cross-disciplinary collaboration across psychology, philosophy, and computer science</li>
+                        </ul>
+                        <a href="https://florea.ai/" class="cta">Learn More <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Additional Work -->
-        <section aria-label="Additional projects and resources">
-            <h2>More</h2>
-            <div class="links">
-                <a href="https://chatbot.expiwell.com" class="link-card">
+        <!-- Research Explained -->
+        <section class="block videos" id="explainers" aria-label="Research explainer videos">
+            <div class="wrap">
+                <div class="head reveal">
                     <div>
-                        <div class="title">Research Platform on AI Chatbots</div>
-                        <div class="desc">No-code deployment of custom chatbots for your research</div>
+                        <div class="eyebrow">Research Explained</div>
+                        <h2>Papers, explained in about three minutes</h2>
                     </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.characterinventory.org" class="link-card">
-                    <div>
-                        <div class="title">Character Inventory</div>
-                        <div class="desc">Assessments for measuring character strengths</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.graphicaldescriptives.org" class="link-card">
-                    <div>
-                        <div class="title">Graphical Descriptives</div>
-                        <div class="desc">Tools for visualizing and understanding data</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://scholar.google.com/citations?hl=en&user=5_1xpscAAAAJ&view_op=list_works&sortby=pubdate" class="link-card">
-                    <div>
-                        <div class="title">Google Scholar</div>
-                        <div class="desc">Publications in measurement, well-being, and AI</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Research Explained (videos) -->
-        <section aria-label="Research explainer videos">
-            <h2>Research Explained <span class="subtle">· Videos</span></h2>
-            <div class="links">
-                <a href="https://www.youtube.com/watch?v=FMmdy6odMSs" class="link-card">
-                    <div>
-                        <div class="title">Would AI Hear Them the Same Way?</div>
-                        <div class="desc">Explainer of Li, Hou &amp; Tay (2026), <em>Journal of Business and Psychology</em></div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/watch?v=__bW-0pBF-k" class="link-card">
-                    <div>
-                        <div class="title">Does Dropping the SAT Remove Bias?</div>
-                        <div class="desc">Explainer of Woo, LeBreton, Keith &amp; Tay (2022), <em>Perspectives on Psychological Science</em></div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/watch?v=fbM6BprcQPw" class="link-card">
-                    <div>
-                        <div class="title">Can Others Tell If You&rsquo;re Being Authentic?</div>
-                        <div class="desc">Whiteboard explainer of Liou &amp; Tay (2026), <em>Scientific Reports</em></div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/watch?v=ZmefdXRomQ8" class="link-card">
-                    <div>
-                        <div class="title">Why Don&rsquo;t We Ask for Help? The 5 HELPS Beliefs</div>
-                        <div class="desc">Whiteboard explainer of Scotney &amp; Tay (2026), <em>The Journal of Positive Psychology</em></div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/watch?v=KxLGRJwSb48" class="link-card">
-                    <div>
-                        <div class="title">The 7 Dimensions of Psychological Situations (CAPTION)</div>
-                        <div class="desc">Explainer of Parrigon, Woo, Tay &amp; Wang (2017), <em>JPSP</em></div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.wam-lab.com/videos.html" class="link-card">
-                    <div>
-                        <div class="title">All explainer videos &amp; Shorts</div>
-                        <div class="desc">On the WAM Lab site, with links to the papers and scales</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-                <a href="https://www.youtube.com/@proflouistay" class="link-card">
-                    <div>
-                        <div class="title">YouTube channel</div>
-                        <div class="desc">Talks and research explainers (AI-assisted, synthetic narration)</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Selected Books -->
-        <section aria-label="Selected books edited by Louis Tay">
-            <h2>Selected Books <span class="subtle">· Editor</span></h2>
-            <ul class="book-list">
-                <li>
-                    <a href="https://global.oup.com/academic/product/the-oxford-handbook-of-well-being-in-higher-education-9780197759394">
-                        <em>The Oxford Handbook of Well-Being in Higher Education</em>
-                        <span class="meta">· Oxford University Press</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.apa.org/pubs/books/big-data-psychological-research">
-                        <em>Big Data in Psychological Research</em>
-                        <span class="meta">· APA Books</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://expiltay.github.io/handbookofwellbeing/">
-                        <em>Handbook of Well-Being</em>
-                        <span class="meta">· DEF Publishers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.hogrefe.com/us/shop/handbook-of-positive-psychology-assessment-96232.html">
-                        <em>Handbook of Positive Psychology Assessment</em>
-                        <span class="meta">· Hogrefe</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://academic.oup.com/edited-volume/41978">
-                        <em>Oxford Handbook of the Positive Humanities</em>
-                        <span class="meta">· Oxford University Press</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.cambridge.org/core/books/technology-and-measurement-around-the-globe/0238BF0428D911075742CA93B7366E75">
-                        <em>Technology and Measurement around the Globe</em>
-                        <span class="meta">· Cambridge University Press</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Recent Writing / LinkedIn -->
-        <section class="linkedin-section" aria-label="Recent writing and social media">
-            <h2>Recent Writing</h2>
-            <div class="linkedin-posts">
-                <!-- LinkedIn Embed 1 -->
-                <div class="linkedin-embed">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7478055341151268864?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post about well-being, education, and health"></iframe>
+                    <p>Short, plain-language video explainers of research from the WAM Lab and collaborators, on AI bias, measurement, well-being, and work.<small>Scripts, visuals, and narration are AI-assisted and checked against each paper. The narrator is a synthetic voice.</small></p>
                 </div>
 
-                <!-- LinkedIn Embed 2 -->
-                <div class="linkedin-embed">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7477330633736937472?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post reviewing key Likert scale considerations"></iframe>
+                <div class="filters reveal" role="group" aria-label="Filter explainers by topic">
+                    <button type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" data-filter="ai" aria-pressed="false">AI &amp; ML</button>
+                    <button type="button" data-filter="meas" aria-pressed="false">Measurement</button>
+                    <button type="button" data-filter="wb" aria-pressed="false">Well-Being</button>
+                    <button type="button" data-filter="work" aria-pressed="false">Work</button>
+                    <button type="button" data-filter="methods" aria-pressed="false">Methods</button>
+                </div>
+
+                <div class="reveal">
+            <div class="feature series-panel" data-topics="ai meas">
+                <div class="feature-body">
+                    <div class="eyebrow">New three-part series</div>
+                    <h3>Machine-Learning Measurement Bias</h3>
+                    <p>When an AI scores people, it is doing measurement. This series asks what bias in AI assessment really is, where it comes from, and why fixing it involves hard trade-offs.</p>
+                    <div class="cite">Tay, Woo, Hickman, Booth &amp; D&#x27;Mello (2022) · <em>Advances in Methods and Practices in Psychological Science</em></div>
+                    <div class="tags"><span class="tag">AI & ML</span><span class="tag">Measurement</span></div>
+                </div>
+                <div class="parts">
+                    <a class="part js-play" href="https://www.youtube.com/watch?v=VP_gzZJq7oo" data-video="VP_gzZJq7oo" data-title="Different Outputs Aren&#x27;t Always Bias">
+                        <span class="pthumb"><img src="https://i.ytimg.com/vi/VP_gzZJq7oo/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span><span class="dur">3:24</span></span>
+                        <span class="ptext"><span class="pnum">Part 1</span><span class="ptitle">Different Outputs Aren&#x27;t Always Bias</span><span class="pblurb">Why different average scores for different groups are not necessarily bias, and why equal averages don&#x27;t prove there is none.</span></span>
+                    </a>
+                    <a class="part js-play" href="https://www.youtube.com/watch?v=fnE-dqiqhuc" data-video="fnE-dqiqhuc" data-title="Where Does AI Bias Come From?">
+                        <span class="pthumb"><img src="https://i.ytimg.com/vi/fnE-dqiqhuc/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span><span class="dur">4:09</span></span>
+                        <span class="ptext"><span class="pnum">Part 2</span><span class="ptitle">Where Does AI Bias Come From?</span><span class="pblurb">A psychometric lens on AI assessment: bias can enter through the ground truth, the platform, behavior, computed features and the algorithm itself.</span></span>
+                    </a>
+                    <a class="part js-play" href="https://www.youtube.com/watch?v=pnsD0wiE5to" data-video="pnsD0wiE5to" data-title="The Hard Trade-offs of Fixing AI Bias">
+                        <span class="pthumb"><img src="https://i.ytimg.com/vi/pnsD0wiE5to/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span><span class="dur">2:15</span></span>
+                        <span class="ptext"><span class="pnum">Part 3</span><span class="ptitle">The Hard Trade-offs of Fixing AI Bias</span><span class="pblurb">Separate models per group? Leaving out race and gender? Why neither is a simple fix, plus four questions to ask before using a model to assess people.</span></span>
+                    </a>
                 </div>
             </div>
+                </div>
 
-            <!-- Social CTA -->
-            <div class="social-cta">
-                <h3>Follow My Research</h3>
-                <p>I share insights on well-being science, measurement methods, and AI applications</p>
-                <div class="social-buttons" role="navigation" aria-label="Social media links">
-                    <a href="https://www.linkedin.com/in/louistay/" class="social-btn linkedin" aria-label="Follow Louis Tay on LinkedIn">
-                        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        LinkedIn
+                <div class="vgrid" id="vgrid">
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=DzAzilxfRwA" data-video="DzAzilxfRwA" data-title="Critical Thinking in AI Use Is Three Skills, Not One" data-topics="ai meas">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/DzAzilxfRwA/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">2:56</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Critical Thinking in AI Use Is Three Skills, Not One</h4>
+                        <p>Verify, understand, reflect: a 13-item scale built across six studies with 1,341 people, and why each part matters on its own.</p>
+                        <div class="cite">Lau et al. (2026) · <em>Computers in Human Behavior Reports</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=3W1klKsSW1U" data-video="3W1klKsSW1U" data-title="Is AI Good for Workers?" data-topics="work ai wb">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/3W1klKsSW1U/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:04</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Is AI Good for Workers?</h4>
+                        <p>An occupational health psychology agenda for aligning AI with worker safety, health and well-being, from stress to job insecurity.</p>
+                        <div class="cite">Probst, Shoss et al. (2026) · <em>Occupational Health Science</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=ZdwJ3sNmXQI" data-video="ZdwJ3sNmXQI" data-title="Does Where You Live Shape Your Well-Being?" data-topics="wb">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/ZdwJ3sNmXQI/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:09</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Does Where You Live Shape Your Well-Being?</h4>
+                        <p>Gallup data on 1.6 million people in 154 countries: about one-fifth of the differences in life satisfaction are tied to country.</p>
+                        <div class="cite">Lee, Lun, Tay &amp; Cheung (2026) · <em>Scientific Reports</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=FMmdy6odMSs" data-video="FMmdy6odMSs" data-title="Would AI Hear Them the Same Way?" data-topics="ai meas work">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/FMmdy6odMSs/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:09</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Would AI Hear Them the Same Way?</h4>
+                        <p>How age shapes what people say in AI-scored video interviews, and how LLM personas can help design fairer questions.</p>
+                        <div class="cite">Li, Hou &amp; Tay (2026) · <em>Journal of Business and Psychology</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=__bW-0pBF-k" data-video="__bW-0pBF-k" data-title="Does Dropping the SAT Remove Bias?" data-topics="meas">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/__bW-0pBF-k/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:39</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Does Dropping the SAT Remove Bias?</h4>
+                        <p>Bias versus score gaps: what the research says about standardized testing and going test-optional.</p>
+                        <div class="cite">Woo, LeBreton, Keith &amp; Tay (2022) · <em>Perspectives on Psychological Science</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=fbM6BprcQPw" data-video="fbM6BprcQPw" data-title="Can Others Tell If You&#x27;re Being Authentic?" data-topics="ai work">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/fbM6BprcQPw/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:45</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Can Others Tell If You&#x27;re Being Authentic?</h4>
+                        <p>Feeling authentic is not the same as looking authentic. What AI analysis of job interviews found.</p>
+                        <div class="cite">Liou &amp; Tay (2026) · <em>Scientific Reports</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=ZmefdXRomQ8" data-video="ZmefdXRomQ8" data-title="Why Don&#x27;t We Ask for Help?" data-topics="wb meas">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/ZmefdXRomQ8/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">4:16</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>Why Don&#x27;t We Ask for Help?</h4>
+                        <p>The five HELPS beliefs that decide whether people reach out for help, and how to measure them.</p>
+                        <div class="cite">Scotney &amp; Tay (2026) · <em>The Journal of Positive Psychology</em></div>
+                    </div>
+                </a>
+                <a class="vcard js-play" href="https://www.youtube.com/watch?v=KxLGRJwSb48" data-video="KxLGRJwSb48" data-title="The 7 Dimensions of Psychological Situations" data-topics="methods meas">
+                    <div class="thumb">
+                        <img src="https://i.ytimg.com/vi/KxLGRJwSb48/sddefault.jpg" alt="" width="640" height="360" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="dur">3:36</span>
+                    </div>
+                    <div class="vbody">
+                        <h4>The 7 Dimensions of Psychological Situations</h4>
+                        <p>Psychology has the Big Five for people. The CAPTION model maps the situations people are in.</p>
+                        <div class="cite">Parrigon, Woo, Tay &amp; Wang (2017) · <em>Journal of Personality and Social Psychology</em></div>
+                    </div>
+                </a>
+                </div>
+                <p class="empty" id="empty">No explainers in this topic yet.</p>
+
+                <div class="subhead reveal">
+                    <h3>Shorts <span>· 24 one-idea clips</span></h3>
+                    <div class="scroller-btns">
+                        <button type="button" data-scroll="-1" aria-label="Scroll Shorts left">←</button>
+                        <button type="button" data-scroll="1" aria-label="Scroll Shorts right">→</button>
+                    </div>
+                </div>
+                <div class="shorts" id="shorts" tabindex="0" aria-label="Research Shorts">
+                    <a class="short js-play" href="https://www.youtube.com/shorts/rPXRJtBW7js" data-video="rPXRJtBW7js" data-title="Is critical thinking about AI one skill?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/rPXRJtBW7js/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Is critical thinking about AI one skill?</span>
                     </a>
-                    <a href="https://twitter.com/LouisTaySC" class="social-btn x" aria-label="Follow Louis Tay on X Twitter">
-                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        X / Twitter
+                    <a class="short js-play" href="https://www.youtube.com/shorts/4NOf-9ThWBU" data-video="4NOf-9ThWBU" data-title="Does your country shape your happiness?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/4NOf-9ThWBU/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Does your country shape your happiness?</span>
                     </a>
-                    <a href="https://bsky.app/profile/louistay.bsky.social" class="social-btn bluesky" aria-label="Follow Louis Tay on Bluesky">
-                        <svg viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
-                        Bluesky
+                    <a class="short js-play" href="https://www.youtube.com/shorts/WCVa2yWIrRA" data-video="WCVa2yWIrRA" data-title="Whose interests should AI at work serve?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/WCVa2yWIrRA/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Whose interests should AI at work serve?</span>
                     </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/ZASh5zq9Iw4" data-video="ZASh5zq9Iw4" data-title="AI is fluent and confident, even when wrong" data-short="1">
+                        <img src="https://i.ytimg.com/vi/ZASh5zq9Iw4/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">AI is fluent and confident, even when wrong</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/uwsFFnNqoqc" data-video="uwsFFnNqoqc" data-title="What should governments measure for well-being?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/uwsFFnNqoqc/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">What should governments measure for well-being?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/HoKlhHk7JJ4" data-video="HoKlhHk7JJ4" data-title="Is AI making work more stressful?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/HoKlhHk7JJ4/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Is AI making work more stressful?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/nuKPnpe6MgY" data-video="nuKPnpe6MgY" data-title="Can you measure critical thinking in AI use?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/nuKPnpe6MgY/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Can you measure critical thinking in AI use?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/pjE5hAO87lQ" data-video="pjE5hAO87lQ" data-title="Life satisfaction: country or county?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/pjE5hAO87lQ/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Life satisfaction: country or county?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/6RKgiITPX88" data-video="6RKgiITPX88" data-title="Will AI take your job?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/6RKgiITPX88/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Will AI take your job?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/-UnIVQ6D_ME" data-video="-UnIVQ6D_ME" data-title="Would AI hear a 25- and a 55-year-old the same way?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/-UnIVQ6D_ME/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Would AI hear a 25- and a 55-year-old the same way?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/5QFClZna-jk" data-video="5QFClZna-jk" data-title="Testing interview questions on AI personas first" data-short="1">
+                        <img src="https://i.ytimg.com/vi/5QFClZna-jk/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Testing interview questions on AI personas first</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/j6XAK1_hD7k" data-video="j6XAK1_hD7k" data-title="Different, not decline: age and AI interviews" data-short="1">
+                        <img src="https://i.ytimg.com/vi/j6XAK1_hD7k/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Different, not decline: age and AI interviews</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/1Mhu6Tk6-TQ" data-video="1Mhu6Tk6-TQ" data-title="Is the SAT biased? Bias vs. a score gap" data-short="1">
+                        <img src="https://i.ytimg.com/vi/1Mhu6Tk6-TQ/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Is the SAT biased? Bias vs. a score gap</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/TC_AunMpT-k" data-video="TC_AunMpT-k" data-title="If colleges drop the SAT, what&#x27;s left?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/TC_AunMpT-k/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">If colleges drop the SAT, what&#x27;s left?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/Efo94rCWlxA" data-video="Efo94rCWlxA" data-title="Can a standardized test level the playing field?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/Efo94rCWlxA/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Can a standardized test level the playing field?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/_m933ZIKf7s" data-video="_m933ZIKf7s" data-title="Can anyone tell if you&#x27;re being yourself?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/_m933ZIKf7s/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Can anyone tell if you&#x27;re being yourself?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/MLaCy1qMk3w" data-video="MLaCy1qMk3w" data-title="Feeling authentic ≠ looking authentic" data-short="1">
+                        <img src="https://i.ytimg.com/vi/MLaCy1qMk3w/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Feeling authentic ≠ looking authentic</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/W2LGvKHtcqI" data-video="W2LGvKHtcqI" data-title="Want to seem authentic in a job interview?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/W2LGvKHtcqI/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Want to seem authentic in a job interview?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/6QuM4R_pTeE" data-video="6QuM4R_pTeE" data-title="Why don&#x27;t people ask for help? 5 beliefs that decide" data-short="1">
+                        <img src="https://i.ytimg.com/vi/6QuM4R_pTeE/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Why don&#x27;t people ask for help? 5 beliefs that decide</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/TQEiZLXxMhw" data-video="TQEiZLXxMhw" data-title="Knowing help is useful isn&#x27;t enough" data-short="1">
+                        <img src="https://i.ytimg.com/vi/TQEiZLXxMhw/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Knowing help is useful isn&#x27;t enough</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/X_Ccct8qsR4" data-video="X_Ccct8qsR4" data-title="Is asking for help a sign of weakness?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/X_Ccct8qsR4/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Is asking for help a sign of weakness?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/wvH4WH2zyRI" data-video="wvH4WH2zyRI" data-title="Psychology has the Big Five for people. What about situations?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/wvH4WH2zyRI/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">Psychology has the Big Five for people. What about situations?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/xbNmCcKfDJk" data-video="xbNmCcKfDJk" data-title="The 7 dimensions of situations: which one describes your day?" data-short="1">
+                        <img src="https://i.ytimg.com/vi/xbNmCcKfDJk/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">The 7 dimensions of situations: which one describes your day?</span>
+                    </a>
+                    <a class="short js-play" href="https://www.youtube.com/shorts/Ru20m4czolU" data-video="Ru20m4czolU" data-title="146.7 billion words were used to test a map of situations" data-short="1">
+                        <img src="https://i.ytimg.com/vi/Ru20m4czolU/hq720.jpg" alt="" width="405" height="720" loading="lazy">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                        <span class="stitle">146.7 billion words were used to test a map of situations</span>
+                    </a>
+                </div>
+
+                <div class="subhead reveal">
+                    <h3>Talks</h3>
+                </div>
+                <div class="talks reveal">
+                <a class="talk js-play" href="https://www.youtube.com/watch?v=9Kcz81_5agM" data-video="9Kcz81_5agM" data-title="Oxford Handbook of Well-Being in Higher Education: An Introduction">
+                    <div class="thumb"><img src="https://i.ytimg.com/vi/9Kcz81_5agM/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+                    <h4>Oxford Handbook of Well-Being in Higher Education: An Introduction</h4>
+                </a>
+                <a class="talk js-play" href="https://www.youtube.com/watch?v=ukRSYniTbXA" data-video="ukRSYniTbXA" data-title="Well-Being: The Ultimate Criterion for Organizational Sciences">
+                    <div class="thumb"><img src="https://i.ytimg.com/vi/ukRSYniTbXA/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+                    <h4>Well-Being: The Ultimate Criterion for Organizational Sciences</h4>
+                </a>
+                <a class="talk js-play" href="https://www.youtube.com/watch?v=CGhaUm6oCuI" data-video="CGhaUm6oCuI" data-title="Machine Learning Measurement Bias">
+                    <div class="thumb"><img src="https://i.ytimg.com/vi/CGhaUm6oCuI/sddefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+                    <h4>Machine Learning Measurement Bias</h4>
+                </a>
+                </div>
+
+                <div class="more-links reveal">
+                    <a class="btn primary" href="https://www.youtube.com/@proflouistay">Subscribe on YouTube</a>
+                    <a class="btn ghost" href="https://www.wam-lab.com/videos.html">All videos, papers &amp; scales on WAM Lab</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools -->
+        <section class="block" id="tools" aria-label="Additional projects and resources">
+            <div class="wrap">
+                <div class="head reveal">
+                    <div>
+                        <div class="eyebrow">For researchers</div>
+                        <h2>Tools &amp; resources</h2>
+                    </div>
+                    <p>Free and open resources from our research program.</p>
+                </div>
+                <div class="tools">
+                    <a href="https://chatbot.expiwell.com" class="tool reveal">
+                        <span class="ic" style="background:#eef2ff;color:#3346c8"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></span>
+                        <div><div class="title">Research Platform on AI Chatbots</div><div class="desc">No-code deployment of custom chatbots for your research</div></div>
+                        <span class="go" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://www.characterinventory.org" class="tool reveal">
+                        <span class="ic" style="background:#ecfdf5;color:#0f766e"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg></span>
+                        <div><div class="title">Character Inventory</div><div class="desc">Assessments for measuring character strengths</div></div>
+                        <span class="go" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://www.graphicaldescriptives.org" class="tool reveal">
+                        <span class="ic" style="background:#fff7ed;color:#c2410c"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+                        <div><div class="title">Graphical Descriptives</div><div class="desc">Tools for visualizing and understanding data</div></div>
+                        <span class="go" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&amp;user=5_1xpscAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" class="tool reveal">
+                        <span class="ic" style="background:#f5f3ff;color:#6d28d9"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+                        <div><div class="title">Google Scholar</div><div class="desc">Publications in measurement, well-being, and AI</div></div>
+                        <span class="go" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books -->
+        <section class="block" id="books" aria-label="Selected books edited by Louis Tay" style="padding-top:1rem">
+            <div class="wrap">
+                <div class="head reveal">
+                    <div>
+                        <div class="eyebrow">Editor</div>
+                        <h2>Selected books</h2>
+                    </div>
+                </div>
+                <div class="books">
+                    <a class="book reveal" href="https://global.oup.com/academic/product/the-oxford-handbook-of-well-being-in-higher-education-9780197759394">
+                        <span class="cover" style="background:linear-gradient(160deg,#0f3d3a,#0f766e)"></span>
+                        <span><span class="t">The Oxford Handbook of Well-Being in Higher Education</span><span class="m" style="display:block">Oxford University Press</span></span>
+                    </a>
+                    <a class="book reveal" href="https://www.apa.org/pubs/books/big-data-psychological-research">
+                        <span class="cover" style="background:linear-gradient(160deg,#1e3a8a,#3b82f6)"></span>
+                        <span><span class="t">Big Data in Psychological Research</span><span class="m" style="display:block">APA Books</span></span>
+                    </a>
+                    <a class="book reveal" href="https://expiltay.github.io/handbookofwellbeing/">
+                        <span class="cover" style="background:linear-gradient(160deg,#92400e,#f59e0b)"></span>
+                        <span><span class="t">Handbook of Well-Being</span><span class="m" style="display:block">DEF Publishers</span></span>
+                    </a>
+                    <a class="book reveal" href="https://www.hogrefe.com/us/shop/handbook-of-positive-psychology-assessment-96232.html">
+                        <span class="cover" style="background:linear-gradient(160deg,#9f1239,#f43f5e)"></span>
+                        <span><span class="t">Handbook of Positive Psychology Assessment</span><span class="m" style="display:block">Hogrefe</span></span>
+                    </a>
+                    <a class="book reveal" href="https://academic.oup.com/edited-volume/41978">
+                        <span class="cover" style="background:linear-gradient(160deg,#3b1780,#8b5cf6)"></span>
+                        <span><span class="t">Oxford Handbook of the Positive Humanities</span><span class="m" style="display:block">Oxford University Press</span></span>
+                    </a>
+                    <a class="book reveal" href="https://www.cambridge.org/core/books/technology-and-measurement-around-the-globe/0238BF0428D911075742CA93B7366E75">
+                        <span class="cover" style="background:linear-gradient(160deg,#111827,#4b5563)"></span>
+                        <span><span class="t">Technology and Measurement around the Globe</span><span class="m" style="display:block">Cambridge University Press</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Writing -->
+        <section class="block writing" id="writing" aria-label="Recent writing and social media">
+            <div class="wrap">
+                <div class="head reveal">
+                    <div>
+                        <div class="eyebrow">Follow my research</div>
+                        <h2>Recent writing</h2>
+                    </div>
+                    <div class="social-buttons" role="navigation" aria-label="Social media links">
+                        <a href="https://www.linkedin.com/in/louistay/" class="social-btn linkedin" aria-label="Follow Louis Tay on LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+                        <a href="https://twitter.com/LouisTaySC" class="social-btn x" aria-label="Follow Louis Tay on X Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>
+                        <a href="https://bsky.app/profile/louistay.bsky.social" class="social-btn bluesky" aria-label="Follow Louis Tay on Bluesky"><svg viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>Bluesky</a>
+                        <a href="https://www.youtube.com/@proflouistay" class="social-btn youtube" aria-label="Louis Tay on YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg>YouTube</a>
+                    </div>
+                </div>
+                <div class="linkedin-posts">
+                    <div class="linkedin-embed reveal">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7478055341151268864?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post about well-being, education, and health"></iframe>
+                    </div>
+                    <div class="linkedin-embed reveal">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7477330633736937472?collapsed=1" height="590" width="100%" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Louis Tay LinkedIn post reviewing key Likert scale considerations"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section class="contact-section" aria-label="Contact information">
-            <h2>Contact</h2>
-            <p class="contact-info">
-                <a href="mailto:stay@purdue.edu" itemprop="email">stay@purdue.edu</a><br>
-                Department of Psychological Sciences, Purdue University
-            </p>
+        <section class="block" id="contact" aria-label="Contact information">
+            <div class="wrap">
+                <div class="contact reveal">
+                    <div>
+                        <div class="eyebrow">Get in touch</div>
+                        <h2>Collaborations, talks, and students</h2>
+                        <p class="contact-info">Department of Psychological Sciences, Purdue University</p>
+                    </div>
+                    <div>
+                        <a class="mail" href="mailto:stay@purdue.edu" itemprop="email">stay@purdue.edu</a>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <footer>
-            <p>William C. Byham Chair in Industrial-Organizational Psychology</p>
-            <p style="margin-top: 0.5rem;"><a href="https://www.purdue.edu/hhs/psy/">Purdue Psychology</a></p>
-        </footer>
     </main>
+
+    <footer>
+        <div class="wrap">
+            <p>William C. Byham Chair in Industrial-Organizational Psychology · <a href="https://www.purdue.edu/hhs/psy/">Purdue Psychology</a></p>
+        </div>
+    </footer>
+
+    <!-- Video modal -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-inner" id="modal-inner">
+            <div class="modal-bar">
+                <h3 id="modal-title"></h3>
+                <div style="display:flex;align-items:center;gap:1rem">
+                    <a id="modal-yt" href="#" target="_blank" rel="noopener">Open on YouTube ↗</a>
+                    <button class="modal-close" id="modal-close" type="button" aria-label="Close video">×</button>
+                </div>
+            </div>
+            <div class="modal-frame" id="modal-frame"></div>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+        document.body.classList.remove('no-js');
+
+        // Nav shadow on scroll
+        var nav = document.querySelector('.nav');
+        var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 8); };
+        window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+        // Reveal on scroll
+        var els = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+            els.forEach(function (el) { io.observe(el); });
+        } else { els.forEach(function (el) { el.classList.add('in'); }); }
+
+        // Topic filters
+        var buttons = document.querySelectorAll('.filters button');
+        var cards = document.querySelectorAll('#explainers .vcard, #explainers .series-panel');
+        var empty = document.getElementById('empty');
+        buttons.forEach(function (b) {
+            b.addEventListener('click', function () {
+                var f = b.getAttribute('data-filter'), shown = 0;
+                buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+                cards.forEach(function (c) {
+                    var ok = f === 'all' || (' ' + c.getAttribute('data-topics') + ' ').indexOf(' ' + f + ' ') > -1;
+                    c.style.display = ok ? '' : 'none';
+                    if (ok) shown++;
+                });
+                empty.style.display = shown ? 'none' : 'block';
+            });
+        });
+
+        // Shorts scroller buttons
+        var sc = document.getElementById('shorts');
+        document.querySelectorAll('[data-scroll]').forEach(function (b) {
+            b.addEventListener('click', function () { sc.scrollBy({ left: +b.getAttribute('data-scroll') * sc.clientWidth * 0.8, behavior: 'smooth' }); });
+        });
+
+        // Modal player (links still work without JS, and with modifier keys)
+        var modal = document.getElementById('modal'), frame = document.getElementById('modal-frame'),
+            inner = document.getElementById('modal-inner'), title = document.getElementById('modal-title'),
+            ytLink = document.getElementById('modal-yt'), closeBtn = document.getElementById('modal-close'), lastFocus = null;
+        function open(id, t, isShort, href) {
+            lastFocus = document.activeElement;
+            title.textContent = t;
+            ytLink.href = href;
+            inner.classList.toggle('short-mode', !!isShort);
+            frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1" title="' + t.replace(/"/g, '&quot;') + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+            modal.hidden = false; modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+        function close() {
+            modal.classList.remove('open'); modal.hidden = true; frame.innerHTML = '';
+            document.body.style.overflow = '';
+            if (lastFocus) lastFocus.focus();
+        }
+        document.querySelectorAll('.js-play').forEach(function (a) {
+            a.addEventListener('click', function (ev) {
+                if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button === 1) return;
+                ev.preventDefault();
+                open(a.getAttribute('data-video'), a.getAttribute('data-title'), a.hasAttribute('data-short'), a.href);
+            });
+        });
+        closeBtn.addEventListener('click', close);
+        modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+        document.addEventListener('keydown', function (e) {
+            if (modal.hidden) return;
+            if (e.key === 'Escape') close();
+            if (e.key === 'Tab') { // keep focus inside the dialog
+                var f = [ytLink, closeBtn];
+                if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[1].focus(); }
+                else if (!e.shiftKey && document.activeElement === f[1]) { e.preventDefault(); f[0].focus(); }
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
