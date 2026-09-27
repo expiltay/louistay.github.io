@@ -205,7 +205,7 @@
         .portrait .chip { position: absolute; background: #fff; border: 1px solid var(--divider); border-radius: 999px; padding: .35rem .8rem; font-size: .76rem; font-weight: 600; color: var(--ink-2); box-shadow: var(--shadow); white-space: nowrap; }
         .portrait .chip b { color: var(--accent-dark); }
         .portrait .c1 { top: 26px; left: -18px; }
-        .portrait .c2 { top: 146px; right: -44px; }
+        .portrait .c2 { top: 150px; right: -96px; }
         .portrait .c3 { bottom: 22px; left: 6px; }
         @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -375,11 +375,10 @@
 
         /* ---------- Books ---------- */
         .books { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
-        .book { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; align-items: center; padding: 1rem; background: #fff; border: 1px solid var(--divider); border-radius: var(--radius); text-decoration: none; transition: transform .25s, box-shadow .25s; }
+        .book { display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: center; padding: 1rem; background: #fff; border: 1px solid var(--divider); border-radius: var(--radius); text-decoration: none; transition: transform .25s, box-shadow .25s; }
         .book:hover, .book:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
         .book:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-        .cover { height: 88px; border-radius: 4px 8px 8px 4px; position: relative; box-shadow: inset 5px 0 0 rgba(0,0,0,.18), 0 6px 14px rgba(16,24,40,.18); display: flex; align-items: flex-end; padding: .4rem; }
-        .cover::after { content: ''; position: absolute; left: 10px; right: 8px; top: 12px; height: 2px; background: rgba(255,255,255,.55); box-shadow: 0 6px 0 rgba(255,255,255,.35); }
+        .cover { width: 72px; height: 104px; object-fit: cover; border-radius: 3px; box-shadow: 0 1px 2px rgba(16,24,40,.12), 0 8px 18px rgba(16,24,40,.18); border: 1px solid var(--divider); background: #fff; }
         .book .t { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; line-height: 1.15; }
         .book .m { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
 
@@ -426,7 +425,7 @@
             .portrait { order: -1; width: 250px; height: 250px; }
             .portrait .disc { inset: 26px; }
             .portrait img { width: 150px; height: 150px; }
-            .portrait .c2 { right: -30px; top: 110px; }
+            .portrait .chip { display: none; }
             .stats { grid-template-columns: repeat(2, 1fr); }
             .stats div:nth-child(3) { border-left: 0; }
             .stats div:nth-child(n+3) { border-top: 1px solid var(--divider); }
@@ -443,9 +442,6 @@
             .featured-card { padding: 1.5rem; }
             .contact { padding: 1.6rem; }
             .contact .mail { font-size: 1.35rem; }
-            .portrait .chip { font-size: .7rem; }
-            .portrait .c1 { left: -8px; }
-            .portrait .c2 { right: -12px; }
             .shorts { grid-auto-columns: 150px; }
             .part { grid-template-columns: 1fr; }
         }
@@ -944,27 +940,27 @@
                 </div>
                 <div class="books">
                     <a class="book reveal" href="https://global.oup.com/academic/product/the-oxford-handbook-of-well-being-in-higher-education-9780197759394">
-                        <span class="cover" style="background:linear-gradient(160deg,#0f3d3a,#0f766e)"></span>
+                        <img class="cover" src="books/ohwbhe.jpg" alt="Cover of The Oxford Handbook of Well-Being in Higher Education" width="72" height="104" loading="lazy">
                         <span><span class="t">The Oxford Handbook of Well-Being in Higher Education</span><span class="m" style="display:block">Oxford University Press</span></span>
                     </a>
                     <a class="book reveal" href="https://www.apa.org/pubs/books/big-data-psychological-research">
-                        <span class="cover" style="background:linear-gradient(160deg,#1e3a8a,#3b82f6)"></span>
+                        <img class="cover" src="books/bigdata.jpg" alt="Cover of Big Data in Psychological Research" width="72" height="104" loading="lazy">
                         <span><span class="t">Big Data in Psychological Research</span><span class="m" style="display:block">APA Books</span></span>
                     </a>
                     <a class="book reveal" href="https://expiltay.github.io/handbookofwellbeing/">
-                        <span class="cover" style="background:linear-gradient(160deg,#92400e,#f59e0b)"></span>
+                        <img class="cover" src="books/hwb.jpg" alt="Cover of Handbook of Well-Being" width="72" height="104" loading="lazy">
                         <span><span class="t">Handbook of Well-Being</span><span class="m" style="display:block">DEF Publishers</span></span>
                     </a>
                     <a class="book reveal" href="https://www.hogrefe.com/us/shop/handbook-of-positive-psychology-assessment-96232.html">
-                        <span class="cover" style="background:linear-gradient(160deg,#9f1239,#f43f5e)"></span>
+                        <img class="cover" src="books/hppa.jpg" alt="Cover of Handbook of Positive Psychology Assessment" width="72" height="104" loading="lazy">
                         <span><span class="t">Handbook of Positive Psychology Assessment</span><span class="m" style="display:block">Hogrefe</span></span>
                     </a>
                     <a class="book reveal" href="https://academic.oup.com/edited-volume/41978">
-                        <span class="cover" style="background:linear-gradient(160deg,#3b1780,#8b5cf6)"></span>
+                        <img class="cover" src="books/ohph.jpg" alt="Cover of Oxford Handbook of the Positive Humanities" width="72" height="104" loading="lazy">
                         <span><span class="t">Oxford Handbook of the Positive Humanities</span><span class="m" style="display:block">Oxford University Press</span></span>
                     </a>
                     <a class="book reveal" href="https://www.cambridge.org/core/books/technology-and-measurement-around-the-globe/0238BF0428D911075742CA93B7366E75">
-                        <span class="cover" style="background:linear-gradient(160deg,#111827,#4b5563)"></span>
+                        <img class="cover" src="books/tmg.jpg" alt="Cover of Technology and Measurement around the Globe" width="72" height="104" loading="lazy">
                         <span><span class="t">Technology and Measurement around the Globe</span><span class="m" style="display:block">Cambridge University Press</span></span>
                     </a>
                 </div>
