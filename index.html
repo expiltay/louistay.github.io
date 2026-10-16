@@ -236,6 +236,20 @@
         .featured-card.purdue-io { background: linear-gradient(140deg, var(--purdue-black) 0%, #243041 100%); }
         .featured-card.purdue-io .stat, .featured-card.purdue-io .featured-label { color: var(--purdue-gold); }
         .featured-card.purdue-io .cta { background: var(--purdue-gold); color: var(--purdue-black); }
+        .featured-card .cta-sub { display: block; margin-top: .9rem; font-size: .86rem; font-weight: 600; color: var(--purdue-gold); text-decoration: none; }
+        .featured-card .cta-sub:hover { text-decoration: underline; }
+        .phd { background: linear-gradient(180deg, #faf8f3 0%, #fff 100%); border-top: 1px solid #ece6d8; }
+        .phd .eyebrow { color: #8a6d3b; }
+        .phd h2 { margin: .3rem 0 1rem; }
+        .phd-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2.6rem; align-items: center; }
+        .phd .actions { margin-top: 1.4rem; }
+        .phd .vcard { color: #fff; }
+        .phd .vcard .series { color: var(--purdue-gold); }
+        .phd p.body { font-size: 1.02rem; color: var(--ink-2); max-width: 36rem; }
+        .phd .dur { right: auto; left: 10px; }
+        .phd .play { left: auto; top: auto; right: 16px; bottom: 16px; margin: 0; width: 52px; height: 52px; }
+        .phd-note { font-size: .88rem; color: var(--muted, #5b6170); margin-top: 1.1rem; }
+        @media (max-width: 860px) { .phd-grid { grid-template-columns: 1fr; } }
         .featured-card.florea { background: linear-gradient(140deg, #3b1780 0%, #7c3aed 100%); }
         .featured-card.florea .stat, .featured-card.florea .featured-label { color: #d4c8ff; }
         .featured-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: .5rem; font-weight: 700; }
@@ -460,6 +474,7 @@
             <a href="#top" class="brand"><span class="mono" aria-hidden="true">LT</span>Louis Tay</a>
             <ul>
                 <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#phd">Ph.D. Applicants</a></li>
                 <li class="keep"><a href="#explainers">Explainers</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#books">Books</a></li>
@@ -571,7 +586,8 @@
                             <li>Collaborative, supportive training environment</li>
                             <li>Cutting-edge research on AI, big data, and the future of work</li>
                         </ul>
-                        <a href="https://hhs.purdue.edu/graduate-programs/industrial-organizational-psychology/" class="cta">Explore the Program <span aria-hidden="true">→</span></a>
+                        <a href="https://www.purdueiopsych.com/" class="cta">Explore the Program <span aria-hidden="true">→</span></a>
+                        <a href="#phd" class="cta-sub">Thinking of applying? Watch my Office Hours video <span aria-hidden="true">↓</span></a>
                     </div>
 
                     <div class="featured-card florea reveal">
@@ -589,6 +605,37 @@
                         </ul>
                         <a href="https://florea.ai/" class="cta">Learn More <span aria-hidden="true">→</span></a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prospective Ph.D. students -->
+        <section class="block phd" id="phd" aria-label="Information for prospective Ph.D. students">
+            <div class="wrap">
+                <div class="phd-grid">
+                    <div class="reveal">
+                        <div class="eyebrow">Prospective Ph.D. students</div>
+                        <h2>Get to know me, and our program</h2>
+                        <p class="body">I'm admitting a Ph.D. student in Purdue's Industrial-Organizational Psychology program for Fall 2027. In lieu of an open house this year, our faculty and students opened their office doors on video: what we study, what the program is really like, and what we look for in applicants.</p>
+                        <p class="body" style="margin-top:.8rem">Start with my three-minute conversation with Franki Kung, then meet the rest of the I-O faculty and our students.</p>
+                        <div class="actions">
+                            <a class="btn primary" href="https://www.purdueiopsych.com/our-program#get-to-know-us">Meet the Purdue I-O faculty <span aria-hidden="true">→</span></a>
+                            <a class="btn ghost" href="https://www.purdueiopsych.com/admissions">Admissions &amp; funding</a>
+                        </div>
+                        <p class="phd-note">Applications are due December 1. Curious whether our interests align? See the <a href="https://www.wam-lab.com/research.html">WAM Lab's research</a>, then email me.</p>
+                    </div>
+                    <a class="vcard js-play reveal" href="https://www.youtube.com/watch?v=IXnz4NLox4U" data-video="IXnz4NLox4U" data-title="Office Hours: Franki Kung drops in on Louis Tay">
+                        <div class="thumb">
+                            <img src="https://www.purdueiopsych.com/images/video-louis.jpg" alt="" width="1280" height="720" loading="lazy">
+                            <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+                            <span class="dur">2:47</span>
+                        </div>
+                        <div class="vbody">
+                            <div class="series">Purdue I-O · Office Hours</div>
+                            <h4>Franki Kung drops in on Louis Tay</h4>
+                            <p>Well-being, AI and measurement, why measurement is anything but boring, and what makes a Ph.D. applicant stand out.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
